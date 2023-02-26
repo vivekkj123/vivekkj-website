@@ -1,0 +1,349 @@
+[
+    {
+        "tags": [
+            "React Native",
+            "Android/iOs",
+            "Hybrid App",
+            "Firebase"
+        ],
+        "year": 2022,
+        "title": "CBT App",
+        "description": "An application for donating/selling used or unused clothes and books and for requesting a doorstep trash pickup.",
+        "buttons": [
+            {
+                "name": "Download For Android",
+                "link": "https://github.com/vivekkj123/cbt-app/releases/tag/v1.0"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/cbt-app"
+            }
+        ],
+        "images": [
+            "/images/Projects/cbtApp/1.jpeg",
+            "/images/Projects/cbtApp/2.jpeg",
+            "/images/Projects/cbtApp/3.jpeg",
+            "/images/Projects/cbtApp/4.jpeg",
+            "/images/Projects/cbtApp/5.jpeg"
+        ]
+    },
+    {
+        "tags": [
+            "NextJs",
+            "SSG",
+            "Tailwind CSS"
+        ],
+        "year": 2022,
+        "title": "Tekwiza Website",
+        "description": "Website deployed for the 2022 edition of annual tech fest of my college",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "https://techfest.sahrdaya.ac.in/"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/tekwiza-web"
+            }
+        ],
+        "images": [
+            "/images/Projects/tekwiza-website.jpg"
+        ]
+    },
+    {
+        "tags": [
+            "NextJs",
+            "Firebase"
+        ],
+        "year": 2022,
+        "title": "Recipe App",
+        "description": "A simple application to write and share recipes with community",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "https://recipe-app-vkj.vercel.app"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/recipe-app"
+            }
+        ],
+        "images": [
+            "/images/Projects/recipe-app.jpg"
+        ]
+    },
+    {
+        "tags": [
+            "React Native",
+            "Hybrid App",
+            "Android/iOs",
+            "SQLite"
+        ],
+        "year": 2022,
+        "title": "Notely - Your Personal Note Taking App",
+        "description": "Notely is a note taking application which saves your notes locally.",
+        "buttons": [
+            {
+                "name": "Download For Android",
+                "link": "https://github.com/vivekkj123/quiz-app-react-native/releases"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/quiz-app-react-native"
+            }
+        ],
+        "images": [
+            "/images/Projects/notely/screen1.jpg",
+            "/images/Projects/notely/screen2.jpg"
+        ]
+    },
+    {
+        "tags": [
+            "Flutter",
+            "Hybrid App",
+            "Android/iOs"
+        ],
+        "year": 2022,
+        "title": "Blinka Morse",
+        "description": "Blinka Morse is a simple flutter application which will helps to convert your message into pulses of light.",
+        "buttons": [
+            {
+                "name": "Download For Android",
+                "link": "https://github.com/vivekkj123/morse-flasher/releases"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/morse-flasher"
+            }
+        ],
+        "images": [
+            "/images/Projects/blinka-morse.png"
+        ]
+    },
+    {
+        "tags": [
+            "Flutter",
+            "Hybrid App",
+            "Android/iOs"
+        ],
+        "year": 2022,
+        "title": "BMI App using Flutter",
+        "description": "A simple application for finding your Body Mass Index(BMI), Also you can share your results with your friend.",
+        "buttons": [
+            {
+                "name": "Download For Android",
+                "link": "https://github.com/vivekkj123/bmi-app/releases"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/bmi-app"
+            }
+        ],
+        "images": [
+            "/images/Projects/bmiApp/screen1.jpg",
+            "/images/Projects/bmiApp/screen2.jpg"
+        ]
+    },
+    {
+        "tags": [
+            "NextJs",
+            "API Integration",
+            "Dark Mode"
+        ],
+        "year": 2021,
+        "title": "Where in the World",
+        "description": "A wiki like web application which consists of details of all countries. Mobile responsive and have filtering based on regions. Also it has a dark mode 🌚",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "http://where-in-the-world-pearl.vercel.app/"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/where-in-the-world"
+            }
+        ],
+        "images": [
+            "/images/Projects/where-in-the-world.png"
+        ]
+    },
+    {
+        "tags": [
+            "ReactJS",
+            "API Integration",
+            "ContextAPI"
+        ],
+        "year": 2021,
+        "title": "IP Address Tracker",
+        "description": "IP Address Tracker made using ReactJs. Mobile responsive and uses ipify API for delivering informations.",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "https://ip-address-tracker-react-teal.vercel.app/"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/ip-address-tracker-react"
+            }
+        ],
+        "images": [
+            "/images/Projects/ip-tracker.png"
+        ]
+    },
+    {
+        "tags": [
+            "React Native",
+            "Hybrid App",
+            "Android/iOs"
+        ],
+        "year": 2021,
+        "title": "Customizable quiz Application using React Native",
+        "description": "A customizable quiz application made using react native",
+        "buttons": [
+            {
+                "name": "Download For Android",
+                "link": "https://github.com/vivekkj123/quiz-app-react-native/releases"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/quiz-app-react-native"
+            }
+        ],
+        "images": [
+            "/images/Projects/quizApp/screen1.jpg",
+            "/images/Projects/quizApp/screen2.jpg",
+            "/images/Projects/quizApp/screen3.jpg"
+        ]
+    },
+    {
+        "tags": [
+            "React Native",
+            "Hybrid App",
+            "Android/iOs"
+        ],
+        "year": 2021,
+        "title": "Basic Todo Application using React Native",
+        "description": "A Basic Todo App made using React Native which resembles a typical todo application.",
+        "buttons": [
+            {
+                "name": "Download For Android",
+                "link": "https://github.com/vivekkj123/TodoApp-react-native/releases"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/TodoApp-react-native/"
+            }
+        ],
+        "images": [
+            "/images/Projects/todo-react-native.jpg"
+        ]
+    },
+    {
+        "tags": [
+            "ReactJS",
+            "NodeJS",
+            "ContextAPI",
+            "Firebase"
+        ],
+        "year": 2021,
+        "title": "Amazon Clone using ReactJS and Firebase",
+        "description": "A Amazon clone which made using ReactJs as frontend, firebase as database, ExpressJs as backend. It have full functionality of a shopping application like cart, placing order, signup, etc.",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "https://amzonee-clone.web.app/"
+            },
+            {
+                "name": "Source Code (Front-end)",
+                "link": "https://github.com/vivekkj123/amazon-clone-frontend"
+            },
+            {
+                "name": "Source Code (Back-end)",
+                "link": "https://github.com/vivekkj123/amazon-clone-backend"
+            }
+        ],
+        "images": [
+            "/images/Projects/amazon-clone.png"
+        ]
+    },
+    {
+        "tags": [
+            "ReactJS",
+            "CSS"
+        ],
+        "year": 2021,
+        "title": "Netflix UI clone using ReactJS",
+        "description": "A Netflix clone made using ReactJS and CSS",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "https://netflix-clone-reactjs.vercel.app/"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/netflix-clone-reactjs"
+            }
+        ],
+        "images": [
+            "/images/Projects/netflix-clone.jpeg"
+        ]
+    },
+    {
+        "tags": [
+            "ReactJS",
+            "Firebase"
+        ],
+        "year": 2021,
+        "title": "Twitter Clone using ReactJS and Firebase",
+        "description": "A twitter clone made using ReactJs and firebase.. Tweeting is only supported :)",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "https://twitter-react-clone-vkj.web.app/"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/twitter-clone-react"
+            }
+        ],
+        "images": [
+            "/images/Projects/twitter-react-clone.jpg"
+        ]
+    },
+    {
+        "tags": [
+            "HTML",
+            "JS",
+            "CSS"
+        ],
+        "year": 2020,
+        "title": "Calculator Using Javascript",
+        "description": "A calculator made using pure javascript for learning javscript basics.",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "http://localhost:3000/Calculator/index.html"
+            }
+        ],
+        "images": [
+            "/images/Projects/calculator-javascript.jpg"
+        ]
+    },
+    {
+        "tags": [
+            "Python"
+        ],
+        "year": 2020,
+        "title": "Calculator made with python using Tkinter",
+        "description": "A calculator made using Tkinter and python",
+        "buttons": [
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/calculator-tkinter"
+            }
+        ],
+        "images": [
+            "/images/Projects/python-tkinter-calculator.png"
+        ]
+    }
+]

@@ -1,0 +1,4 @@
+.Navbar > nav >a{
+  @apply hover:text-primary-fg font-bold cursor-pointer transition duration-300 my-6 md:mx-14
+  
+}
