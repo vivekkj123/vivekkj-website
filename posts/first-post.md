@@ -1,9 +1,8 @@
 ﻿---
-title: My First Post
-author: Vivek K J
-date: 2022-07-17T00:00:00+00:00
-slug: my-first-posts
-tags: blogging, foss
+title: "My first Post"
+date: "2019-03-05"
+description: "My new post example"
+tags: ["foss", "Blog"]
 ---
 
 # My First Post

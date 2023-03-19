@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <div className={styles.Navbar}>
       <span
-        className="md:hidden block bg-primary-bg text-white"
+        className="lg:hidden block bg-primary-bg text-white"
         onClick={() => setNavbarToggled(!NavbarToggled)}
       >
         <i
@@ -40,7 +40,7 @@ const Navbar = () => {
         ></i>
       </span>
       <nav
-        className={`md:flex ${
+        className={`lg:flex ${
           NavbarToggled
             ? "flex-col transition-all ease-out duration-500"
             : "hidden"

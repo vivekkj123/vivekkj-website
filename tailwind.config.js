@@ -12,7 +12,7 @@ module.exports = {
         "secondary-bg": "#22213A",
       },
       gridTemplateColumns: {
-        "hero-grid": "2fr 1fr",
+        "hero-grid": "0.1fr 2fr 1fr",
       },
     },
   },

@@ -38,8 +38,7 @@ const WhoAmI = () => {
               Contributor
             </li>
             <li>
-              <i className="fa-solid fa-box-open"></i> &nbsp; Debian Packaging
-              Maintainer
+              <i className="fa-solid fa-box-open"></i> &nbsp; Debian Maintainer
             </li>
             <li>
               <i className="fa-solid fa-language"></i> &nbsp; Software

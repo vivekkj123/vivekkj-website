@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
@@ -11,6 +11,7 @@ import ContactMe from "../components/ContactMe";
 import ScrollToTop from "../components/ScrollToTop";
 import Projects from "../components/Projects";
 import Head from "next/head";
+import { PacmanLoader } from "react-spinners";
 const Home = () => {
   useEffect(() => {
     AOS.init();
