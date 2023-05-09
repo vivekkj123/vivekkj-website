@@ -9,9 +9,11 @@ const Hero = () => {
       className={`${styles.hero} leading-loose grid lg:grid-cols-hero-grid pt-20 text-center lg:text-left`}
     >
       {" "}
-      <div className={`${styles.Social} 
+      <div
+        className={`${styles.Social} 
       flex lg:order-1 flex-row h-2 lg:flex-col mx-auto items-center px-8 order-3
-       lg:text-4xl text-2xl`}>
+       lg:text-4xl text-2xl`}
+      >
         <a href="https://www.linkedin.com/in/iamvivekkj">
           <i className="fa fa-linkedin"></i>
         </a>
@@ -48,7 +50,7 @@ const Hero = () => {
             ></path>
           </svg>
         </a>
-        <a href="">
+        <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/D0179263E2020E4071574073A5FF4BB3EA53C5DF">
           <i className="fa fa-key"></i>
         </a>
       </div>

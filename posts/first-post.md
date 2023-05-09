@@ -1,12 +1,12 @@
 ﻿---
 title: "My first Post"
-date: "2019-03-05"
+date: "10-05-2023"
 description: "My new post example"
 tags: ["foss", "Blog"]
 ---
 
 # My First Post
 
-This would be the first post from https://vivekkj.codes/
+This would be the first post on https://vivekkj.codes/
 
 
