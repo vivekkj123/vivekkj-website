@@ -10,7 +10,7 @@ const Skills = () => {
       >
       <div>
 
-        <h2 className="text-4xl md:text-6xl font-bold">Skills 🚀</h2>
+        <h1 className="text-4xl md:text-6xl font-bold">Skills 🚀</h1>
         <p className="text-xl mt-5">I&apos;m well experienced in these technologies</p>
         <div className="columns-2 md:mt-16 mt-5 leading-10 text-lg md:text-2xl">
           <div>

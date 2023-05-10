@@ -3,9 +3,9 @@ import React from "react";
 const ContactMe = () => {
   return (
     <section id="contact" data-aos="zoom-in-down" className="lg:px-32">
-      <h2 className="text-center text-4xl lg:mx-24 md:text-5xl font-bold mb-6">
+      <h1 className="text-center text-4xl lg:mx-24 md:text-5xl font-bold mb-6">
         Contact Me 📥
-      </h2>
+      </h1>
       <form
         action="https://formspree.io/f/xnqgqbve"
         method="post"

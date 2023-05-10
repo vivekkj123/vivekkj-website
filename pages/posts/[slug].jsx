@@ -14,7 +14,22 @@ const Post = ({
   return (
     <React.Fragment>
       <Head>
+        <meta charSet="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <title>{title} | Vivek K J</title>
+        <meta name="title" content={`${title} | Vivek K J`} />
+
+        <meta property="og:type" content="blog" />
+        <meta property="og:url" content="https://www.vivekkj.codes/posts" />
+        <meta property="og:title" content={`${title} | Vivek K J`} />
+        <meta property="twitter:title" content={`${title} | Vivek K J`} />
+        <meta
+          content={
+            `vivek, VIVEK K J, foss, debian, web developer, vivu, വിവേക്, വിവേക് കെ ജെ, programmer, developer, open source, ` +
+            tags.map((tag) => tag)
+          }
+          name="keywords"
+        />
       </Head>
       <article className="prose-lg Post px-6 min-h-screen lg:px-40 pt-20 text-white bg-primary-bg">
         <h1 className="text-primary-fg capitalize text-4xl text-center font-bold ">

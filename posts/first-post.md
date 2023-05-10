@@ -5,7 +5,6 @@ description: "My new post example"
 tags: ["foss", "Blog"]
 ---
 
-# My First Post
 
 This would be the first post on https://vivekkj.codes/
 

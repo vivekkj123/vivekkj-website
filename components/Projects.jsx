@@ -25,7 +25,7 @@ const Projects = () => {
       id="projects"
       className="Projects text-center md:text-left md:p-20 mb-20"
     >
-      <h2 className="text-4xl ml-10 md:text-6xl font-bold">Projects 🧑🏻‍💻</h2>
+      <h1 className="text-4xl ml-10 md:text-6xl font-bold">Projects 🧑🏻‍💻</h1>
       <div className="projectGrid mt-20 grid lg:grid-cols-3 grid-cols-1">
         {Projects.map((project) => (
           <div className={styles.project} key={project.title}>

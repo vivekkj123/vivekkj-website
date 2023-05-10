@@ -10,9 +10,9 @@ const WhoAmI = () => {
        md:p-32 mt-20 md:text-left text-center
        "
     >
-      <h3 className="text-primary-fg text-4xl md:text-6xl font-bold font-mono">
+      <h1 className="text-primary-fg text-4xl md:text-6xl font-bold font-mono">
         $whoami
-      </h3>
+      </h1>
       <div className="grid md:grid-cols-2 leading-loose mt-10 md:mt-20 text-xl">
         <div>
           <p>
