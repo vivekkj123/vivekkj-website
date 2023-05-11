@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Projects.module.css";
@@ -32,7 +32,7 @@ const Projects = () => {
             <div className="h-64 w-full relative overflow-hidden">
               {/*  */}
               {project.images.length === 1 ? (
-                <Image
+                <ExportedImage
                   key={project.images[0]}
                   src={project.images[0]}
                   placeholder="blur"
@@ -50,7 +50,7 @@ const Projects = () => {
                 >
                   {project.images.map((img) => (
                     <SwiperSlide key={img} className={styles.swiperSlide}>
-                      <Image
+                      <ExportedImage
                         src={img}
                         objectFit="contain"
                         layout="fill"

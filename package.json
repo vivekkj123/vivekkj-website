@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export && next-image-export-optimizer",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,6 +16,7 @@
     "gray-matter": "^4.0.3",
     "marked": "^4.2.12",
     "next": "^13.1.1",
+    "next-image-export-optimizer": "^1.6.1",
     "next-pwa": "^5.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

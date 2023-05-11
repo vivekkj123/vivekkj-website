@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import React from "react";
 import styles from "../styles/Hero.module.css";
 import Avatar from "/public/images/avatar.png";
@@ -61,7 +61,7 @@ const Hero = () => {
       >
         <p className="text-4xl sm:text-7xl font-bold">
           Hey
-          <Image
+          <ExportedImage
             className="inline-flex h-16 w-16 mx-2"
             src={handWave}
             alt="hand-wave-gif"
@@ -82,12 +82,12 @@ const Hero = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Image
+          <ExportedImage
             className="w-auto h-auto"
             src={"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"}
             alt="Buy Me A Coffee"
             height={60}
-            width={217}
+            width={200}
           />
         </a>
       </div>
@@ -96,7 +96,7 @@ const Hero = () => {
         data-aos-duration="10000"
         className="order-1 lg:h-[30rem] h-auto lg:order-2 justify-self-center flex p-4 sm:p-14 items-center bg-primary-fg rounded-full lg:rounded-none lg:rounded-l-full"
       >
-        <Image
+        <ExportedImage
           className="rounded-full sm:h-96 sm:w-96 h-48 w-48 object-cover object-top"
           src={Avatar}
           priority
