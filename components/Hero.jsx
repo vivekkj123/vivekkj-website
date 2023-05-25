@@ -91,18 +91,15 @@ const Hero = () => {
           />
         </a>
       </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="10000"
-        className="order-1 lg:h-[30rem] h-auto lg:order-2 justify-self-center flex p-4 sm:p-14 items-center bg-primary-fg rounded-full lg:rounded-none lg:rounded-l-full"
-      >
-        <ExportedImage
-          className="rounded-full sm:h-96 sm:w-96 h-48 w-48 object-cover object-top"
-          src={Avatar}
-          priority
-          alt="Vivek K J"
-          height={1000}
-        />
+      <div data-aos="fade-up" data-aos-duration="10000" className="order-1 lg:h-[30rem] h-auto lg:order-2 justify-self-center flex p-4 sm:p-14 items-center bg-primary-fg rounded-full lg:rounded-none lg:rounded-l-full">
+        <div className="w-48 h-48 sm:w-96 sm:h-96 rounded-full overflow-hidden">
+          <ExportedImage
+            className="w-full h-full object-cover object-top"
+            src={Avatar}
+            priority
+            alt="Vivek K J"
+          />
+        </div>
       </div>
     </section>
   );

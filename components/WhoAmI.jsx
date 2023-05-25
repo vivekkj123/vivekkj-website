@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/WhoAmI.module.css";
+import Link from "next/link";
 
 const WhoAmI = () => {
   return (
@@ -18,10 +19,12 @@ const WhoAmI = () => {
           <p>
             <i className="fa fa-map-marker"></i> Kerala, India
           </p>
+          <Link href={'emailto:contact@vivekkj.codes'}>
           <p>
             <i className="fa fa-envelope"></i>
             contact[at]vivekkj[dot]codes
           </p>
+          </Link>
         </div>
         <div className="leading-loose mt-20 md:mt-0">
           <ul>
