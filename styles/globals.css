@@ -43,3 +43,6 @@ a {
 .fa {
   @apply hover:text-primary-fg md:p-2 p-1 transition duration-300
 }
+pre{
+  overflow-x: scroll;
+}
