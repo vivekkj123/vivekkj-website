@@ -1,8 +1,8 @@
 ---
 title: "Creating my first chrome extension"
 date: "18-06-2023"
-description: "How I developed a extension for simplifying linwyas end semester survey"
-tags: ["chrome", "extension", "survery"]
+description: "How I developed a extension for simplifying linways end semester survey"
+tags: ["chrome", "extension", "linways"]
 ---
 ## Long story in short
 
