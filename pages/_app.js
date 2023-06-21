@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <React.Fragment>
-      
       {Loaded ? (
         <Layout>
           <Component {...pageProps} />
