@@ -67,8 +67,6 @@ export default async function handler(request) {
         </div>
       ),
       {
-        width: 1200,
-        height: 630,
         fonts: [
           {
             name: "SoinSans",
