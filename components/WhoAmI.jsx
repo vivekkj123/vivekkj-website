@@ -19,10 +19,10 @@ const WhoAmI = () => {
           <p>
             <i className="fa fa-map-marker"></i> Kerala, India
           </p>
-          <Link href={'emailto:contact@vivekkj.codes'}>
+          <Link href={'emailto:contact@vivekkj.in'}>
           <p>
             <i className="fa fa-envelope"></i>
-            contact[at]vivekkj[dot]codes
+            contact[at]vivekkj[dot]in
           </p>
           </Link>
         </div>

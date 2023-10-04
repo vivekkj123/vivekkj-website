@@ -7,7 +7,7 @@ const ContactMe = () => {
         Contact Me 📥
       </h1>
       <form
-        action="https://formspree.io/f/xnqgqbve"
+        action="https://formsubmit.co/contact@vivekkj.in"
         method="post"
         className=" flex flex-col px-8 md:px-32"
       >

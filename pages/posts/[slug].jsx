@@ -27,7 +27,7 @@ const Post = ({
           content={`https://og-image-generator-blog.vercel.app/api/og?title=${title}`}
         />
         <meta property="og:type" content="blog" />
-        <meta property="og:url" content="https://www.vivekkj.codes/posts" />
+        <meta property="og:url" content="https://www.vivekkj.in/posts" />
         <meta property="og:title" content={`${title} | Vivek K J`} />
         <meta property="twitter:title" content={`${title} | Vivek K J`} />
         <meta

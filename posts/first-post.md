@@ -6,6 +6,6 @@ tags: ["foss", "Blog"]
 ---
 
 
-This would be the first post on https://vivekkj.codes/
+This would be the first post on https://vivekkj.in/
 
 

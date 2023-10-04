@@ -31,7 +31,7 @@ const Home = () => {
           content="Personal website of Vivek K J. Vivek K J is a professional full stack web developer, and a programmer.Vivek is a Free Software Contributor."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.vivekkj.codes" />
+        <meta property="og:url" content="https://www.vivekkj.in" />
         <meta property="og:title" content="VIVEK K J | വിവേക് കെ ജെ" />
         <meta
           property="og:description"
