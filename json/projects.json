@@ -1,6 +1,56 @@
 [
     {
         "tags": [
+            "NextJs",
+            "TypeScript",
+            "Hackathon",
+            "Full-Stack"
+        ],
+        "year": 2023,
+        "title": "MedCare",
+        "description": "Revolutionize Healthcare with Smart Medical Records. Securely share medical records with doctors and others, made with pangea for pangea securathon",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "https://medcare-woad.vercel.app/"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/medcare"
+            }
+        ],
+        "images": [
+            "/images/Projects/MedCare/1.jpg",
+            "/images/Projects/MedCare/2.jpg"
+        ]
+    },
+    {
+        "tags": [
+            "ReactJS",
+            "Firebase"
+        ],
+        "year": 2023,
+        "title": "MobilEASE",
+        "description": "A Web-Based Traffic Complaint System that can be used by citizens for reporting various traffic and civic issues.",
+        "buttons": [
+            {
+                "name": "Live Demo",
+                "link": "https://mobilease.vercel.app/"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/mobilEASE"
+            }
+        ],
+        "images": [
+            "/images/Projects/MobilEase/1.jpg",
+            "/images/Projects/MobilEase/2.jpg",
+            "/images/Projects/MobilEase/3.jpg",
+            "/images/Projects/MobilEase/4.jpg"
+        ]
+    },
+    {
+        "tags": [
             "React Native",
             "Android/iOs",
             "Hybrid App",
