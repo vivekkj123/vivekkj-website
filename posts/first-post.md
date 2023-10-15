@@ -1,6 +1,6 @@
 ﻿---
 title: "My first Post"
-date: "10-05-2023"
+date: "2023-05-10"
 description: "My new post example"
 tags: ["foss", "Blog"]
 ---

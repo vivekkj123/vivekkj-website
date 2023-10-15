@@ -1,6 +1,6 @@
 ---
 title: "Creating my first chrome extension"
-date: "18-06-2023"
+date: "2023-06-18"
 description: "How I developed a extension for simplifying linways end semester survey"
 tags: ["chrome", "extension", "linways"]
 ---

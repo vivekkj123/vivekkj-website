@@ -53,10 +53,10 @@ const Post = ({
             ))}
           </p>
           <p>{ReadTime.text}</p>
-          <p>Posted On: {date}</p>
+          <p>Posted On: {new Date(date).toLocaleDateString("en-GB")}</p>
         </div>
         <p
-          className={`lg:py-10 ${styles.post}`}
+          className={`lg:py-10 lg:px-20 space-y-1 break-words whitespace-pre-line ${styles.post}`}
           dangerouslySetInnerHTML={{ __html: marked(content) }}
         ></p>
       </article>

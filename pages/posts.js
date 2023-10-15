@@ -28,7 +28,7 @@ const Posts = ({ posts }) => {
           className="grid grid-cols-1 pt-8 text-xl"
         >
           <h4 className="font-semibold">{post.frontmatter.title}</h4>
-          <h4 className="text-sm">{post.frontmatter.date}</h4>
+          <h4 className="text-sm">{new Date(post.frontmatter.date).toLocaleDateString('en-GB')}</h4>
         </Link>
       ))}
       {posts.length === 0 ? <h2>Nothing to see here !</h2> : null}

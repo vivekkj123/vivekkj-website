@@ -15,7 +15,6 @@ body {
   scrollbar-width: none; */
   scrollbar-width: auto;
   scrollbar-color: #fef303 #0a091b;
-
 }
 *::-webkit-scrollbar {
   width: 15px;
@@ -45,4 +44,12 @@ a {
 }
 pre{
   overflow-x: scroll;
+}
+/*  image caption for markdown posts */
+img + em{
+  display: block;
+  margin-top: -20px;
+  color: #989898;
+  text-align: center;
+  @apply text-sm
 }
