@@ -1,6 +1,16 @@
+import { faDebian, faLinux } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCode,
+  faCodeCompare,
+  faCodePullRequest,
+  faEnvelope,
+  faLanguage,
+  faLaptopCode,
+  faMapMarkerAlt,
+  faMobileScreen
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import styles from "../styles/WhoAmI.module.css";
-import Link from "next/link";
 
 const WhoAmI = () => {
   return (
@@ -17,42 +27,49 @@ const WhoAmI = () => {
       <div className="grid md:grid-cols-2 leading-loose mt-10 md:mt-20 text-xl">
         <div>
           <p>
-            <i className="fa fa-map-marker"></i> Kerala, India
+            <FontAwesomeIcon className="mx-2" icon={faMapMarkerAlt} /> Kerala,
+            India
           </p>
-          <Link href={'emailto:contact@vivekkj.in'}>
           <p>
-            <i className="fa fa-envelope"></i>
+            <FontAwesomeIcon
+              href="emailto:contact@vivekkj.in"
+              className="mx-2"
+              icon={faEnvelope}
+            />{" "}
             contact[at]vivekkj[dot]in
           </p>
-          </Link>
         </div>
         <div className="leading-loose mt-20 md:mt-0">
           <ul>
             <li>
-              <i className="fa-solid fa-laptop-code"></i> &nbsp; MERN Full Stack
-              Developer
+              <FontAwesomeIcon icon={faLaptopCode} />
+              &nbsp; MERN Full Stack Developer
             </li>
             <li>
-              <i className="fa-solid fa-mobile-screen"></i> &nbsp; Hybrid App
+              <FontAwesomeIcon icon={faMobileScreen} /> &nbsp; Hybrid App
               Developer (React Native, Flutter)
             </li>
             <li>
-              <i className="fa-brands fa-osi"></i> &nbsp; Open-Source
+              <FontAwesomeIcon icon={faCode} />
+              &nbsp; GDSC Lead (SCET)
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCodeCompare} /> &nbsp; Open-Source
               Contributor
             </li>
             <li>
-              <i className="fa-solid fa-box-open"></i> &nbsp; Debian Maintainer
+              <FontAwesomeIcon icon={faDebian} /> &nbsp; Debian Maintainer
             </li>
             <li>
-              <i className="fa-solid fa-language"></i> &nbsp; Software
-              Translator
+              <FontAwesomeIcon icon={faLanguage} /> &nbsp;Software Translator
             </li>
             <li>
-              <i className="fa-solid fa-code-pull-request"></i> &nbsp; FOSS
+              <FontAwesomeIcon icon={faCodePullRequest} /> &nbsp; FOSS
               Enthusiast
             </li>
             <li>
-              <i className="fa-brands fa-linux"></i> &nbsp; GNU/Linux User
+              <FontAwesomeIcon icon={faLinux} />
+              &nbsp;&nbsp;&nbsp;GNU/Linux User
             </li>
           </ul>
         </div>

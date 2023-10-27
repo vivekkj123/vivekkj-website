@@ -60,10 +60,6 @@ const Home = () => {
         <link rel="apple-touch-icon" href="/icon-512x512.png"></link>
         <meta name="theme-color" content="#fef303" />
       </Head>
-      <Script
-        src="https://kit.fontawesome.com/b7fec954dc.js"
-        crossorigin="anonymous"
-      ></Script>
       <Script src="https://unpkg.com/akar-icons-fonts"></Script>
       <link
         href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"

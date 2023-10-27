@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
 * {
   box-sizing: border-box;
   --swiper-theme-color: #fef303;
@@ -16,6 +17,7 @@ body {
   scrollbar-width: auto;
   scrollbar-color: #fef303 #0a091b;
 }
+
 *::-webkit-scrollbar {
   width: 15px;
 }
@@ -42,11 +44,19 @@ a {
 .fa {
   @apply hover:text-primary-fg md:p-2 p-1 transition duration-300
 }
-pre{
+
+/* #skills > * >.svg-inline--fa,
+#skills > * >[class^='ai'],
+.bx {
+  /* @apply mx-4 */
+
+
+pre {
   overflow-x: scroll;
 }
+
 /*  image caption for markdown posts */
-img + em{
+img+em {
   display: block;
   margin-top: -20px;
   color: #989898;

@@ -5,23 +5,39 @@ import { PacmanLoader } from "react-spinners";
 import { useEffect, useState } from "react";
 import React from "react";
 import LoadingLayout from "../components/LoadingLayout";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
-  const [Loaded, setLoaded] = useState(false);
+  const [Loading, setLoading] = useState(false);
+  const router = useRouter()
 
   useEffect(() => {
-    setTimeout(() => setLoaded(true), 1500);
+    const handleRouteChange = (url) => {
+      setLoading(true);
+    };
+
+    const handleRouteChangeComplete = () => {
+      setLoading(false);
+    };
+
+    router.events.on("routeChangeStart", handleRouteChange);
+    router.events.on("routeChangeComplete", handleRouteChangeComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+      router.events.off("routeChangeComplete", handleRouteChangeComplete);
+    };
   }, []);
   return (
     <React.Fragment>
-      {Loaded ? (
+      {Loading ? (
+        <LoadingLayout>
+          <PacmanLoader loading={Loading} color="#fef303" />
+        </LoadingLayout>
+      ) : (
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      ) : (
-        <LoadingLayout>
-          <PacmanLoader loading={!Loaded} color="#fef303" />
-        </LoadingLayout>
       )}
     </React.Fragment>
   );

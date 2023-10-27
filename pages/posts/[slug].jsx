@@ -16,12 +16,14 @@ const Post = ({
   return (
     <React.Fragment>
       <Head>
-        {/* <meta charSet="utf-8" />
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" /> */}
-        {/* <title>{title} | Vivek K J</title> */}
-        {/* <meta name="title" content={`${title} | Vivek K J`} /> */}
-        <meta property="og:image" content={`/api/og?title=${title}`} />
-        <meta property="twitter:image" content={`/api/og?title=${title}`} />
+        <meta
+          property="og:image"
+          content={`https://og-image-generator-blog.vercel.app/api/og?title=${title}`}
+        />
+        <meta
+          property="twitter:image"
+          content={`https://og-image-generator-blog.vercel.app/api/og?title=${title}`}
+        />
         <meta property="og:type" content="blog" />
         <meta property="og:url" content="https://www.vivekkj.in/posts" />
         <meta property="og:title" content={`${title} | Vivek K J`} />
@@ -43,7 +45,7 @@ const Post = ({
           description: description,
           images: [
             {
-              url: `/api/og?title=${title}`,
+              url: `https://og-image-generator-blog.vercel.app/api/og?title=${title}`,
               width: 800,
               height: 600,
             },

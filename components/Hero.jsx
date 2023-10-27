@@ -3,6 +3,18 @@ import React from "react";
 import styles from "../styles/Hero.module.css";
 import Avatar from "/public/images/avatar.jpg";
 import handWave from "/public/images/hi.gif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faGithub,
+  faGitlab,
+  faInstagram,
+  faLinkedin,
+  faMastodon,
+  faTelegram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faKey } from "@fortawesome/free-solid-svg-icons";
 const Hero = () => {
   return (
     <section
@@ -14,30 +26,36 @@ const Hero = () => {
       flex lg:order-1 flex-row h-2 lg:flex-col mx-auto items-center px-8 order-3
        lg:text-4xl text-2xl`}
       >
-        <a href="https://www.linkedin.com/in/iamvivekkj">
-          <i className="fa fa-linkedin"></i>
-        </a>
-        <a href="https://www.github.com/vivekkj123">
-          <i className="fa fa-github"></i>
-        </a>
-        <a href="https://www.gitlab.com/vivekkj">
-          <i className="fa fa-gitlab"></i>
-        </a>
-        <a href="https://www.twitter.com/iamvivekkj">
-          <i className="fa fa-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/iamvivekkj">
-          <i className="fa fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/iamvivekkj">
-          <i className="fa fa-facebook"></i>
-        </a>
-        <a href="https://www.t.me/iamvivekkj">
-          <i className="fa fa-telegram"></i>
-        </a>
-        <a href="https://fosstodon.org/@vivekkj">
-          <i className="fa fa-brands fa-mastodon"></i>
-        </a>
+        <FontAwesomeIcon
+          href="https://www.linkedin.com/in/iamvivekkj"
+          icon={faLinkedin}
+        />
+        <FontAwesomeIcon
+          href="https://www.github.com/vivekkj123"
+          icon={faGithub}
+        />
+        <FontAwesomeIcon
+          href="https://www.gitlab.com/vivekkj"
+          icon={faGitlab}
+        />
+        <FontAwesomeIcon
+          href="https://www.twitter.com/iamvivekkj"
+          icon={faTwitter}
+        />
+        <FontAwesomeIcon
+          href="https://www.instagram.com/iamvivekkj"
+          icon={faInstagram}
+        />
+        <FontAwesomeIcon
+          href="https://www.facebook.com/iamvivekkj"
+          icon={faFacebook}
+        />
+        <FontAwesomeIcon href="https://www.t.me/iamvivekkj" icon={faTelegram} />
+        <FontAwesomeIcon
+          href="https://fosstodon.org/@vivekkj"
+          icon={faMastodon}
+        />
+
         <a href="https://matrix.to/#/@vivekkj:kde.org">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +68,10 @@ const Hero = () => {
             ></path>
           </svg>
         </a>
-        <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/D0179263E2020E4071574073A5FF4BB3EA53C5DF">
-          <i className="fa fa-key"></i>
-        </a>
+        <FontAwesomeIcon
+          href="https://keys.openpgp.org/vks/v1/by-fingerprint/D0179263E2020E4071574073A5FF4BB3EA53C5DF"
+          icon={faKey}
+        />
       </div>
       <div
         data-aos="fade-right"
@@ -86,8 +105,8 @@ const Hero = () => {
             className="w-auto h-auto"
             src={"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"}
             alt="Buy Me A Coffee"
-            height={60}
-            width={200}
+            height={10}
+            width={130}
           />
         </a>
       </div>

@@ -11,8 +11,8 @@
 .hero i {
   @apply font-bold;
 }
-.Social i {
-  @apply hover:text-primary-fg md:p-2 p-1 transition duration-300;
+.Social svg {
+  @apply hover:text-primary-fg md:p-2 p-1 transition duration-300 cursor-pointer;
 }
 .loader {
   position: absolute;
