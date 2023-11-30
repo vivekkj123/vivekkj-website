@@ -1,6 +1,34 @@
 [
     {
         "tags": [
+            "React Native",
+            "AI",
+            "Firebase"
+        ],
+        "year": 2023,
+        "title": "SmartSnip",
+        "description": "Streamlines note-taking using React Native, Firebase, and GPT-3.5. Users organize content into subjects and topics, replacing manual entry. The app employs AI to auto-generate concise notes, enhancing information capture efficiency.",
+        "buttons": [
+            {
+                "name": "Download For Android",
+                "link": "https://github.com/vivekkj123/smartsnip/releases"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/vivekkj123/smartsnip"
+            }
+        ],
+        "images": [
+            "/images/Projects/SmartSnip/screenshot-1.jpeg",
+            "/images/Projects/SmartSnip/screenshot-2.jpeg",
+            "/images/Projects/SmartSnip/screenshot-3.jpeg",
+            "/images/Projects/SmartSnip/screenshot-4.jpeg",
+            "/images/Projects/SmartSnip/screenshot-5.jpeg",
+            "/images/Projects/SmartSnip/screenshot-6.png"
+        ]
+    },
+    {
+        "tags": [
             "NextJs",
             "TypeScript",
             "Hackathon",
