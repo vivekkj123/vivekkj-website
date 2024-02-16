@@ -1,4 +1,20 @@
-.Navbar > nav >a{
-  @apply hover:text-primary-fg font-bold cursor-pointer transition duration-300 my-6 md:mx-14
-  
+.Navbar>nav>a {
+  @apply hover:text-primary-fg font-bold cursor-pointer transition duration-300 py-4 md:mx-14 
+}
+
+.Navbar {
+  @apply bg-primary-bg
+}
+
+.Navbar>nav {
+  @apply rounded-3xl md:w-max mx-auto mt-10 bg-secondary-bg;
+
+
+
+
+
+
+
+
+
 }

@@ -29,14 +29,14 @@ const Navbar = () => {
   return (
     <div className={styles.Navbar}>
       <span
-        className="lg:hidden block bg-primary-bg text-white"
+        className="md:hidden block bg-primary-bg text-white"
         onClick={() => setNavbarToggled(!NavbarToggled)}
       >
         <i
           id="hambuger"
           className={`fas ${
             NavbarToggled ? "fa-close" : "fa-bars"
-          } cursor-pointer text-3xl mx-10 mt-8`}
+          } text-white cursor-pointer text-3xl mx-10 mt-8`}
         ></i>
       </span>
       <nav

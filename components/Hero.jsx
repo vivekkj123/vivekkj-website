@@ -23,8 +23,8 @@ const Hero = () => {
       {" "}
       <div
         className={`${styles.Social} 
-      flex lg:order-1 flex-row h-2 lg:flex-col mx-auto items-center px-8 order-3
-       lg:text-4xl text-2xl`}
+      flex lg:order-1 flex-row justify-center lg:flex-col mx-auto items-center px-4 rounded-3xl py-4 md:mx-4 order-3
+       lg:text-4xl text-2xl bg-secondary-bg h-full`}
       >
         <FontAwesomeIcon
           href="https://www.linkedin.com/in/iamvivekkj"
@@ -94,9 +94,10 @@ const Hero = () => {
             Vivek K J
           </span>
         </p>
+      <div className="flex flex-col md:flex-row gap-4 items-center mt-6 ">
 
         <a
-          className="mt-6 lg:mx-1 mx-auto"
+          className="lg:mx-1 mx-auto"
           href="https://www.buymeacoffee.com/vivekkj"
           target="_blank"
           rel="noreferrer"
@@ -109,6 +110,11 @@ const Hero = () => {
             width={130}
           />
         </a>
+        <a href="/resume.pdf" className="bg-primary-fg px-12  rounded-lg text-primary-bg font-bold flex items-center h-16 justify-center text-xl">
+          Download Resume
+        </a>
+      </div>
+
       </div>
       <div
         data-aos="fade-up"

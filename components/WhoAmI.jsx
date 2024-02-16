@@ -18,7 +18,7 @@ const WhoAmI = () => {
       data-aos="fade-up"
       data-aos-delay="300"
       className="p-6
-       md:p-32 mt-20 md:text-left text-center
+       md:p-32 mt-20 md:text-left 
        "
     >
       <h1 className="text-primary-fg text-4xl md:text-6xl font-bold font-mono">
@@ -39,7 +39,7 @@ const WhoAmI = () => {
             contact[at]vivekkj[dot]in
           </p>
         </div>
-        <div className="leading-loose mt-20 md:mt-0">
+        <div className="leading-loose mt-20 md:mt-0 ">
           <ul>
             <li>
               <FontAwesomeIcon icon={faLaptopCode} />
