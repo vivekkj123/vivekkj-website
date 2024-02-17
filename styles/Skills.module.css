@@ -1,0 +1,7 @@
+.Skills > div > ul > li{
+    @apply flex gap-2 mx-2 items-center bg-secondary-bg text-xl w-max my-1 px-4 py-2 rounded-3xl
+}
+
+.Skills > div > ul{
+    @apply flex md:grid md:grid-cols-2 w-full flex-wrap justify-center
+}

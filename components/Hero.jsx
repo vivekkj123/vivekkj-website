@@ -110,7 +110,7 @@ const Hero = () => {
             width={130}
           />
         </a>
-        <a href="/resume.pdf" className="bg-primary-fg px-12  rounded-lg text-primary-bg font-bold flex items-center h-16 justify-center text-xl">
+        <a href="/resume.pdf" className="bg-primary-fg px-8  rounded-lg text-primary-bg font-bold flex items-center h-16 justify-center text-xl">
           Download Resume
         </a>
       </div>

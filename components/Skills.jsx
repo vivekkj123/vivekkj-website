@@ -7,11 +7,12 @@ import {
   faPython,
   faReact,
   faSass,
-  faVuejs
+  faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import styles from "../styles/Skills.module.css";
 
 const Skills = () => {
   return (
@@ -25,9 +26,11 @@ const Skills = () => {
         <p className="text-xl mt-5">
           I&apos;m well experienced in these technologies
         </p>
-        <div className="columns-2 md:mt-16 mt-5 leading-10 text-lg md:text-2xl">
+        <div
+          className={`${styles.Skills}  md:mt-16 mt-5 leading-10 text-lg md:text-2xl`}
+        >
           <div>
-            <ul className="flex flex-col gap-4">
+            <ul>
               <li>
                 <FontAwesomeIcon icon={faReact} /> ReactJS
               </li>
@@ -56,7 +59,7 @@ const Skills = () => {
             </ul>
           </div>
           <div>
-            <ul className="flex flex-col gap-4">
+            <ul>
               <li>
                 <FontAwesomeIcon icon={faVuejs} /> VueJS
               </li>
@@ -67,7 +70,8 @@ const Skills = () => {
                 <FontAwesomeIcon icon={faJava} /> Java
               </li>
               <li>
-                <FontAwesomeIcon icon={faPython} />Python
+                <FontAwesomeIcon icon={faPython} />
+                Python
               </li>
               <li>
                 <FontAwesomeIcon icon={faGitAlt} />
