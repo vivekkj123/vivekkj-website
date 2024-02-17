@@ -37,8 +37,9 @@ const Projects = () => {
                   src={project.images[0]}
                   placeholder="blur"
                   blurDataURL={project.images[0]}
-                  layout={"fill"}
-                  objectFit={"contain"}
+                  fill
+                  style={{objectFit:"scale-down"}}
+
                   alt={project.title}
                 />
               ) : (
@@ -52,8 +53,8 @@ const Projects = () => {
                     <SwiperSlide key={img} className={styles.swiperSlide}>
                       <ExportedImage
                         src={img}
-                        objectFit="contain"
-                        layout="fill"
+                        fill
+                        style={{objectFit:"scale-down"}}
                         alt={project.title}
                         placeholder="blur"
                         blurDataURL={img}

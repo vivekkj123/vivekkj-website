@@ -34,8 +34,8 @@ const Navbar = () => {
       >
         <i
           id="hambuger"
-          className={`fas ${
-            NavbarToggled ? "fa-close" : "fa-bars"
+          className={`bx ${
+            NavbarToggled ? "bx bx-x" : " bx-menu"
           } text-white cursor-pointer text-3xl mx-10 mt-8`}
         ></i>
       </span>
@@ -44,7 +44,7 @@ const Navbar = () => {
           NavbarToggled
             ? "flex-col transition-all ease-out duration-500"
             : "hidden"
-        }  flex justify-center items-center text-base bg-primary-bg text-white sm:text-xl`}
+        }  flex justify-center items-center text-base text-white sm:text-xl`}
       >
         {links.map((link) => (
           <Link

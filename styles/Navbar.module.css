@@ -7,7 +7,7 @@
 }
 
 .Navbar>nav {
-  @apply rounded-3xl md:w-max mx-auto mt-10 bg-secondary-bg;
+  @apply rounded-3xl md:w-max md:mx-auto mx-20 mt-10 bg-secondary-bg;
 
 
 
