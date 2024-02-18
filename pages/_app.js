@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/9vV0Lcd/VIVEK-K-J.jpg"
+          content="https://i.ibb.co/CW30z8f/Vivek-K-J.jpg"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://metatags.io/" />
@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/9vV0Lcd/VIVEK-K-J.jpg"
+          content="https://i.ibb.co/CW30z8f/Vivek-K-J.jpg"
         />
         <meta
           content="vivek, VIVEK K J, foss, debian, web developer, vivu, വിവേക്, വിവേക് കെ ജെ, programmer, developer, open source"
