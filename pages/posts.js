@@ -1,15 +1,25 @@
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import matter from "gray-matter";
 import Link from "next/link";
 import { sortByDate } from "../utils";
 import path from "path";
 import ExportedImage from "next-image-export-optimizer";
+import ReactPaginate from "react-paginate";
 
 // import fs from 'fs'
 const Posts = ({ posts }) => {
-  console.log(posts);
+  const [itemOffset, setItemOffset] = useState(0);
+  const itemsPerPage = 10;
+  const endOffset = itemOffset + itemsPerPage;
+  const currentItems = posts.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(posts.length / itemsPerPage);
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % posts.length;
+    setItemOffset(newOffset);
+  };
+
   return (
     <div
       className="bg-primary-bg text-white
@@ -26,7 +36,7 @@ const Posts = ({ posts }) => {
       </Head>
       <div className="PostsContainer pt-20"></div>
       <h2 className=" text-primary-fg font-bold text-4xl ">Posts</h2>
-      {posts?.map((post) => (
+      {currentItems?.map((post) => (
         <Link
           href={`/posts/${post.slug}`}
           key={post.slug}
@@ -51,6 +61,20 @@ const Posts = ({ posts }) => {
         </Link>
       ))}
       {posts.length === 0 ? <h2>Nothing to see here !</h2> : null}
+      <ReactPaginate
+        breakLabel="..."
+        nextLabel="➡️"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={5}
+        pageCount={pageCount}
+        previousLabel="⬅️"
+        renderOnZeroPageCount={null}
+        containerClassName="flex justify-center mt-4 gap-2 "
+        pageClassName="bg-secondary-bg px-2 py-2 h-8 w-8 flex items-center justify-center rounded-full hover:bg-primary-bg hover:text-white rounded-full"
+        nextClassName="bg-secondary-bg px-2 py-2 rounded-md"
+        previousClassName="bg-secondary-bg px-2 py-2 rounded-md"
+        activeClassName="bg-primary-fg text-black"
+      />
     </div>
   );
 };
