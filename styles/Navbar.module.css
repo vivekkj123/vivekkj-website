@@ -3,8 +3,8 @@
 }
 
 .Navbar {
-  @apply bg-primary-bg
-}
+  @apply bg-primary-bg 
+} 
 
 .Navbar>nav {
   @apply rounded-3xl md:w-max md:mx-auto mx-20 mt-10 bg-secondary-bg;

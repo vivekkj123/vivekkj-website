@@ -23,7 +23,7 @@ const Home = () => {
     <React.Fragment>
       <Head>
         <meta charSet="utf-8" />
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="title" content="VIVEK K J | വിവേക് കെ ജെ" />
         <title>VIVEK K J | വിവേക് കെ ജെ</title>
         <meta

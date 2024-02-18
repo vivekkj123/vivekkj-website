@@ -18,6 +18,10 @@ const Posts = ({ posts }) => {
     >
       <Head>
         <title>Posts | Vivek K J</title>
+        <link
+        href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+        rel="stylesheet"
+      />
       </Head>
       <div className="PostsContainer pt-20"></div>
       <h2 className=" text-primary-fg font-bold text-4xl ">Posts</h2>
