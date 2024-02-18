@@ -7,7 +7,7 @@ const withPWA = require("next-pwa")({
 });
 const nextConfig = withPWA({
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: false,
   images: {
     loader: "custom",
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],

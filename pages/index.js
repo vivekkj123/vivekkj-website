@@ -19,7 +19,6 @@ const Home = () => {
   };
   return (
     <React.Fragment>
-      
       <div className="pb-20 Home bg-primary-bg text-white">
         <ScrollToTop resetToTop={resetToTop} />
         <Hero />

@@ -35,10 +35,6 @@ const Post = ({
           }
           name="keywords"
         />
-        <link
-        href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-        rel="stylesheet"
-      />
       </Head>
       <NextSeo
         title={`${title} | Vivek K J`}

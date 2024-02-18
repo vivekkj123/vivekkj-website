@@ -68,6 +68,7 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon-512x512.png"></link>
+        
         <meta name="theme-color" content="#fef303" />
       </Head>
       <Script src="https://unpkg.com/akar-icons-fonts"></Script>
