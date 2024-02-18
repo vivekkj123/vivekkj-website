@@ -60,12 +60,12 @@ const Post = ({
           site: "@iamvivekkj",
         }}
       />
-      <article className="md:prose-lg prose-headings:my-10 prose-p:my-3 Post px-6 min-h-screen lg:px-40 pt-20 text-white bg-primary-bg">
+      <article className="md:prose-lg prose-headings:my-10 prose-p:my-3 Post px-6 min-h-screen lg:px-40 md:pt-20 text-white bg-primary-bg">
 
         <h1 className="text-primary-fg capitalize text-4xl leading-snug md:text-center font-bold ">
           {title}
         </h1>
-        <div className="md:mt-6 flex md:items-center lg:flex-row flex-col leading-none lg:justify-between">
+        <div className="md:mt-6 bg-secondary-bg px-8 py-2 rounded-3xl flex md:items-center lg:flex-row flex-col leading-none lg:justify-between">
           <p>
             Tags:{" "}
             {tags.map((tag, i) => (

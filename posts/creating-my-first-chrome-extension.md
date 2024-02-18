@@ -34,13 +34,9 @@ Now, the radio buttons in a single question will have names like right23, right3
 For each button, there are five options. We can access these individual buttons by using the index:
 
 0 - Excellent
-
 1 - Very Good
-
 2 - Good
-
 3 - Fair
-
 4 - Poor
 
 For example, if we need to set the answer to the first question as 'Good' and the name of the first question's options is 'right20', we can do that by executing this in the console:

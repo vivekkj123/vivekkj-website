@@ -1,6 +1,9 @@
 .post > ul{
     list-style-type: disc;
 }
+.post > ul > li{
+  margin-top: -1rem;
+}
 .post > ol{
     list-style: decimal;
 }
