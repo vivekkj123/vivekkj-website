@@ -9,5 +9,5 @@
   color: #fef303;
 }
 .post > pre{
-  @apply bg-slate-600 w-full
+  @apply bg-slate-600 w-full px-6 rounded-lg py-2
 }

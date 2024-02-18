@@ -60,11 +60,12 @@ const Post = ({
           site: "@iamvivekkj",
         }}
       />
-      <article className="prose-lg Post px-6 min-h-screen lg:px-40 pt-20 text-white bg-primary-bg">
-        <h1 className="text-primary-fg capitalize text-4xl text-center font-bold ">
+      <article className="md:prose-lg prose-headings:my-10 prose-p:my-3 Post px-6 min-h-screen lg:px-40 pt-20 text-white bg-primary-bg">
+
+        <h1 className="text-primary-fg capitalize text-4xl leading-snug md:text-center font-bold ">
           {title}
         </h1>
-        <div className="lg:my-6 flex items-center lg:flex-row flex-col leading-none lg:justify-between">
+        <div className="md:mt-6 flex md:items-center lg:flex-row flex-col leading-none lg:justify-between">
           <p>
             Tags:{" "}
             {tags.map((tag, i) => (
@@ -77,8 +78,9 @@ const Post = ({
           <p>{ReadTime.text}</p>
           <p>Posted On: {new Date(date).toLocaleDateString("en-GB")}</p>
         </div>
+
         <p
-          className={`lg:py-10 lg:px-20 space-y-1 break-words whitespace-pre-line ${styles.post}`}
+          className={`lg:py-10 lg:px-20 mt-10 space-y-1 break-words whitespace-pre-line ${styles.post}`}
           dangerouslySetInnerHTML={{ __html: marked(content) }}
         ></p>
       </article>

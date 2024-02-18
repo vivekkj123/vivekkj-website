@@ -1,6 +1,7 @@
 ---
 title: "My Debconf23"
 date: "2023-10-16"
+coverImage: "https://www.debian.org/Pics/debconf23_group_photo.jpg"
 description: "How was my Debconf 23 - A blog"
 tags: ["debian", "foss", "open-source"]
 ---

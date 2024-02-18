@@ -2,6 +2,7 @@
 title: "Creating my first chrome extension"
 date: "2023-06-18"
 description: "How I developed a extension for simplifying linways end semester survey"
+coverImage: "https://github.com/vivekkj123/linways-auto-feedback/raw/main/src/assets/logo.png"
 tags: ["chrome", "extension", "linways"]
 ---
 ## Long story in short
