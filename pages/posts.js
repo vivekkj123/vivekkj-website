@@ -1,12 +1,11 @@
-import Head from "next/head";
-import React, { useState } from "react";
-import Navbar from "../components/Navbar";
 import matter from "gray-matter";
-import Link from "next/link";
-import { sortByDate } from "../utils";
-import path from "path";
 import ExportedImage from "next-image-export-optimizer";
+import Head from "next/head";
+import Link from "next/link";
+import path from "path";
+import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
+import { sortByDate } from "../utils";
 
 // import fs from 'fs'
 const Posts = ({ posts }) => {
