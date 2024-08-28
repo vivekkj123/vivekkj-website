@@ -18,20 +18,20 @@ const Post = ({
       <Head>
         <meta
           property="og:image"
-          content={`https://og-image-generator-blog.vercel.app/api/og?title=${title}`}
+          content={`https://og-image-generator-blog.vercel.app/api/og?title=${encodeURIComponent(title)}`}
         />
         <meta
           property="twitter:image"
-          content={`https://og-image-generator-blog.vercel.app/api/og?title=${title}`}
+          content={`https://og-image-generator-blog.vercel.app/api/og?title=${encodeURIComponent(title)}`}
         />
-        <meta property="og:type" content="blog" />
-        <meta property="og:url" content="https://www.vivekkj.in/posts" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://www.vivekkj.in/posts/${slug}`} />
         <meta property="og:title" content={`${title} | Vivek K J`} />
         <meta property="twitter:title" content={`${title} | Vivek K J`} />
         <meta
           content={
             `vivek, VIVEK K J, foss, debian, web developer, vivu, വിവേക്, വിവേക് കെ ജെ, programmer, developer, open source, ` +
-            tags.map((tag) => tag)
+            tags.join(", ")
           }
           name="keywords"
         />
@@ -45,7 +45,7 @@ const Post = ({
           description: description,
           images: [
             {
-              url: `https://og-image-generator-blog.vercel.app/api/og?title=${title}`,
+              url: `https://og-image-generator-blog.vercel.app/api/og?title=${encodeURIComponent(title)}`,
               width: 800,
               height: 600,
             },
@@ -56,43 +56,36 @@ const Post = ({
           site: "@iamvivekkj",
         }}
       />
-      <article className="md:prose-lg prose-headings:my-10 prose-p:my-3 Post px-6 min-h-screen lg:px-40 md:pt-20 text-white bg-primary-bg">
-
-        <h1 className="text-primary-fg capitalize text-4xl leading-snug md:text-center font-bold ">
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-screen text-white bg-primary-bg">
+        <h1 className="text-primary-fg capitalize text-3xl sm:text-4xl lg:text-5xl leading-tight font-bold mb-8 text-center">
           {title}
         </h1>
-        <div className="md:mt-6 bg-secondary-bg px-8 py-2 rounded-3xl flex md:items-center lg:flex-row flex-col leading-none lg:justify-between">
-          <p>
-            Tags:{" "}
-            {tags.map((tag, i) => (
-              <span key={tag}>
-                {tag}
-                {i !== tags.length - 1 ? "," : ""}
-              </span>
-            ))}
+        <div className="bg-secondary-bg rounded-lg p-4 sm:p-6 mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <p className="text-sm sm:text-base">
+            Posted on: {new Date(date).toLocaleDateString("en-GB", { year: 'numeric', month: 'long', day: 'numeric' })}
           </p>
-          <p>{ReadTime.text}</p>
-          <p>Posted On: {new Date(date).toLocaleDateString("en-GB")}</p>
+          <p className="text-sm sm:text-base">{ReadTime.text}</p>
+          <p className="text-sm sm:text-base">
+            Tags: {tags.join(", ")}
+          </p>
         </div>
-
-        <p
-          className={`lg:py-10 lg:px-20 mt-10 space-y-1 break-words whitespace-pre-line ${styles.post}`}
+        <div
+          className={`prose prose-lg prose-invert max-w-none ${styles.post}`}
           dangerouslySetInnerHTML={{ __html: marked(content) }}
-        ></p>
+        ></div>
       </article>
     </React.Fragment>
   );
 };
+
 export async function getStaticPaths() {
   const fs = require("fs");
   const files = fs.readdirSync(path.join("posts"));
-
   const paths = files.map((filename) => ({
     params: {
       slug: filename.replace(".md", ""),
     },
   }));
-
   return {
     paths,
     fallback: false,
@@ -105,7 +98,6 @@ export async function getStaticProps({ params: { slug } }) {
     path.join("posts", slug + ".md"),
     "utf-8"
   );
-
   const { data: frontmatter, content } = matter(markdownWithMeta);
   let ReadTime = readingTime(content);
   return {

@@ -1,6 +1,30 @@
 [
     {
         "tags": [
+            "NextJS",
+            "Firebase"
+        ],
+        "year": 2024,
+        "title": "IEEE Sahrdaya Website",
+        "description": "Revamped IEEE Sahrdaya SB website utilizing NextJS and Firebase. Features include a modern design, individual society logins for managing events and office bearers, and dedicated pages for each society",
+        "buttons": [
+            {
+                "name": "Live",
+                "link": "https://ieeesahrdaya.com"
+            },
+            {
+                "name": "Source Code",
+                "link": "https://github.com/IEEE-Sahrdaya/website"
+            }
+        ],
+        "images": [
+            "/images/Projects/IEEEWebsite/screenshot-1.jpg",
+            "/images/Projects/IEEEWebsite/screenshot-2.jpg",
+            "/images/Projects/IEEEWebsite/screenshot-3.jpg"
+        ]
+    },
+    {
+        "tags": [
             "React Native",
             "AI",
             "Firebase"
@@ -39,7 +63,7 @@
         "description": "Revolutionize Healthcare with Smart Medical Records. Securely share medical records with doctors and others, made with pangea for pangea securathon",
         "buttons": [
             {
-                "name": "Live Demo",
+                "name": "Live",
                 "link": "https://medcare-woad.vercel.app/"
             },
             {
@@ -62,7 +86,7 @@
         "description": "A Web-Based Traffic Complaint System that can be used by citizens for reporting various traffic and civic issues.",
         "buttons": [
             {
-                "name": "Live Demo",
+                "name": "Live",
                 "link": "https://mobilease.vercel.app/"
             },
             {
@@ -116,8 +140,8 @@
         "description": "Website deployed for the 2022 edition of annual tech fest of my college",
         "buttons": [
             {
-                "name": "Live Demo",
-                "link": "https://techfest.sahrdaya.ac.in/"
+                "name": "Live",
+                "link": "https://tekwiza-web.vercel.app/"
             },
             {
                 "name": "Source Code",
@@ -138,7 +162,7 @@
         "description": "A simple application to write and share recipes with community",
         "buttons": [
             {
-                "name": "Live Demo",
+                "name": "Live",
                 "link": "https://recipe-app-vkj.vercel.app"
             },
             {
@@ -233,7 +257,7 @@
         "description": "A wiki like web application which consists of details of all countries. Mobile responsive and have filtering based on regions. Also it has a dark mode 🌚",
         "buttons": [
             {
-                "name": "Live Demo",
+                "name": "Live",
                 "link": "http://where-in-the-world-pearl.vercel.app/"
             },
             {
@@ -256,7 +280,7 @@
         "description": "IP Address Tracker made using ReactJs. Mobile responsive and uses ipify API for delivering informations.",
         "buttons": [
             {
-                "name": "Live Demo",
+                "name": "Live",
                 "link": "https://ip-address-tracker-react-teal.vercel.app/"
             },
             {
@@ -328,7 +352,7 @@
         "description": "A Amazon clone which made using ReactJs as frontend, firebase as database, ExpressJs as backend. It have full functionality of a shopping application like cart, placing order, signup, etc.",
         "buttons": [
             {
-                "name": "Live Demo",
+                "name": "Live",
                 "link": "https://amzonee-clone.web.app/"
             },
             {
@@ -354,7 +378,7 @@
         "description": "A Netflix clone made using ReactJS and CSS",
         "buttons": [
             {
-                "name": "Live Demo",
+                "name": "Live",
                 "link": "https://netflix-clone-reactjs.vercel.app/"
             },
             {
@@ -376,7 +400,7 @@
         "description": "A twitter clone made using ReactJs and firebase.. Tweeting is only supported :)",
         "buttons": [
             {
-                "name": "Live Demo",
+                "name": "Live",
                 "link": "https://twitter-react-clone-vkj.web.app/"
             },
             {
@@ -399,7 +423,7 @@
         "description": "A calculator made using pure javascript for learning javscript basics.",
         "buttons": [
             {
-                "name": "Live Demo",
+                "name": "Live",
                 "link": "http://localhost:3000/Calculator/index.html"
             }
         ],

@@ -10,7 +10,7 @@ import { sortByDate } from "../utils";
 // import fs from 'fs'
 const Posts = ({ posts }) => {
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 10;
+  const itemsPerPage = 12;
   const endOffset = itemOffset + itemsPerPage;
   const currentItems = posts.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(posts.length / itemsPerPage);
@@ -31,30 +31,34 @@ const Posts = ({ posts }) => {
       </Head>
       <div className="PostsContainer pt-20"></div>
       <h2 className=" text-primary-fg font-bold text-4xl ">Posts</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-4">
+
       {currentItems?.map((post) => (
         <Link
-          href={`/posts/${post.slug}`}
-          key={post.slug}
-          className="flex flex-row justify-between items-center py-4 text-xl bg-secondary-bg my-4 px-6 rounded-3xl"
+        href={`/posts/${post.slug}`}
+        key={post.slug}
+        className="flex flex-col justify-center py-4 text-xl bg-secondary-bg  px-6 rounded-3xl"
         >
-          <div className="hover:text-primary-fg transition-colors delay-200">
+            {post.frontmatter.coverImage && (
+            <ExportedImage
+            src={post.frontmatter.coverImage}
+            width={20}
+            height={20}
+            alt={post.frontmatter.title}
+            style={{ objectFit: "scale-down" }}
+            className="h-32 mx-auto w-auto hidden md:block rounded-xl"
+            />
+          )}
+          <div className="hover:text-primary-fg my-4 transition-colors delay-200">
             <h4 className="font-semibold">{post.frontmatter.title}</h4>
             <h4 className="text-sm">
               {new Date(post.frontmatter.date).toLocaleDateString("en-GB")}
             </h4>
           </div>
-          {post.frontmatter.coverImage && (
-            <ExportedImage
-              src={post.frontmatter.coverImage}
-              width={20}
-              height={20}
-              alt={post.frontmatter.title}
-              style={{ objectFit: "scale-down" }}
-              className="h-32 w-auto hidden md:block rounded-xl"
-            />
-          )}
+        
         </Link>
       ))}
+      </div>
       {posts.length === 0 ? <h2>Nothing to see here !</h2> : null}
       <ReactPaginate
         breakLabel="..."
