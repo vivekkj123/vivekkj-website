@@ -27,32 +27,34 @@ const Hero = () => {
        lg:text-4xl text-2xl bg-secondary-bg h-full`}
       >
         <FontAwesomeIcon
-          href="https://www.linkedin.com/in/iamvivekkj"
+          // href="https://www.linkedin.com/in/iamvivekkj"
           icon={faLinkedin}
         />
         <FontAwesomeIcon
-          href="https://www.github.com/vivekkj123"
+          // href="https://www.github.com/vivekkj123"
           icon={faGithub}
         />
         <FontAwesomeIcon
-          href="https://www.gitlab.com/vivekkj"
+          // href="https://www.gitlab.com/vivekkj"
           icon={faGitlab}
         />
         <FontAwesomeIcon
-          href="https://www.twitter.com/iamvivekkj"
+          // href="https://www.twitter.com/iamvivekkj"
           icon={faTwitter}
         />
         <FontAwesomeIcon
-          href="https://www.instagram.com/iamvivekkj"
+          // href="https://www.instagram.com/iamvivekkj"
           icon={faInstagram}
         />
         <FontAwesomeIcon
-          href="https://www.facebook.com/iamvivekkj"
+          // href="https://www.facebook.com/iamvivekkj"
           icon={faFacebook}
         />
-        <FontAwesomeIcon href="https://www.t.me/iamvivekkj" icon={faTelegram} />
+        <FontAwesomeIcon 
+        // href="https://www.t.me/iamvivekkj"
+         icon={faTelegram} />
         <FontAwesomeIcon
-          href="https://fosstodon.org/@vivekkj"
+          // href="https://fosstodon.org/@vivekkj"
           icon={faMastodon}
         />
 
@@ -69,7 +71,7 @@ const Hero = () => {
           </svg>
         </a>
         <FontAwesomeIcon
-          href="https://keys.openpgp.org/vks/v1/by-fingerprint/D0179263E2020E4071574073A5FF4BB3EA53C5DF"
+          // href="https://keys.openpgp.org/vks/v1/by-fingerprint/D0179263E2020E4071574073A5FF4BB3EA53C5DF"
           icon={faKey}
         />
       </div>

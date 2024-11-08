@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/Projects.module.css";
 import projects from "../json/projects.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 

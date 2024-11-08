@@ -4,35 +4,35 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export && next-image-export-optimizer",
+    "build": "next build && next-image-export-optimizer",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "aos": "^2.3.4",
     "gray-matter": "^4.0.3",
-    "marked": "^4.2.12",
-    "next": "^13.1.1",
+    "marked": "^14.1.4",
+    "next": "15.0.3",
     "next-image-export-optimizer": "^1.6.1",
-    "next-pwa": "^5.6.0",
     "next-seo": "^6.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-paginate": "^8.2.0",
-    "react-spinners": "^0.13.8",
+    "react-spinners": "^0.14.1",
     "reading-time": "^1.5.0",
-    "sharp": "^0.32.1",
-    "swiper": "^8.4.5"
+    "sharp": "^0.33.5",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.12",
-    "eslint": "8.24.0",
-    "eslint-config-next": "^13.1.1",
+    "eslint": "9.14.0",
+    "eslint-config-next": "15.0.3",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }
