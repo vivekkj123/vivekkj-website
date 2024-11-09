@@ -56,7 +56,7 @@ const Hero = () => {
           {/* Left column - Text content */}
           <div className="space-y-6 order-2 md:order-1">
             <h1 className="text-4xl md:text-6xl font-bold">
-              Hi, I&apos;m <span className={styles.heroName}>Vivek K J</span>
+              Hi, I&apos;m <br className="block md:hidden" /> <span className={styles.heroName}>Vivek K J</span>
             </h1>
             <p className="text-xl text-gray-300">
               Full Stack Developer & Open Source Enthusiast

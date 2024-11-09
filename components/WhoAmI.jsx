@@ -62,7 +62,7 @@ const WhoAmI = () => {
           </div>
 
           {/* Tech Stack card */}
-          <div className="backdrop-blur-xl bg-white/5 rounded-3xl border border-white/10 p-8 space-y-6">
+          <div className="backdrop-blur-xl bg-white/5 rounded-3xl border border-white/10 p-8 space-y-6 col-span-2 md:col-span-1">
             <h3 className="text-2xl font-bold">Tech Stack & Roles</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-gray-300">
