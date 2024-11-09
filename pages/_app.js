@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
       router.events.off("routeChangeStart", handleRouteChange);
       router.events.off("routeChangeComplete", handleRouteChangeComplete);
     };
-  }, []);
+  }, [router]);
   return (
     <React.Fragment>
       <Head>

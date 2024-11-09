@@ -7,14 +7,16 @@
 .post > ol{
     list-style: decimal;
 }
+
 .post > * > a {
   text-decoration: underline;
-  color: #fef303;
+  color: #FF4B4B;
 }
+
 .post > pre{
-  @apply bg-slate-600 w-full px-6 rounded-lg py-2
+  @apply bg-code-bg w-full px-6 rounded-lg py-2 backdrop-blur-md
 }
 .post >*> code{
-  @apply bg-secondary-bg w-full px-1 rounded-lg py-1
+  @apply bg-glass-card w-full px-1 rounded-lg py-1 backdrop-blur-md
 
 }

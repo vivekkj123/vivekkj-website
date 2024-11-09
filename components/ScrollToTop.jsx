@@ -1,27 +1,18 @@
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const ScrollToTop = ({ resetToTop }) => {
-  const [Visible, setVisible] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () =>
-      window.scrollY > 600 ? setVisible(true) : setVisible(false)
-    );
-  }, []);
   return (
-    <div
+    <button
       onClick={resetToTop}
-      className={`${
-        Visible ? "flex" : "invisible"
-      } flex items-center justify-center z-50 cursor-pointer h-16 w-16 bg-primary-fg rounded-full m-10 fixed bottom-0 right-0`}
+      className="fixed bottom-8 right-8 z-50 p-4 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full hover:bg-white/10 transition-all duration-300 group"
+      aria-label="Scroll to top"
     >
-      {" "}
-      <FontAwesomeIcon
-        icon={faChevronUp}
-        className=" text-primary-bg text-xl"
+      <FontAwesomeIcon 
+        icon={faArrowUp} 
+        className="w-5 h-5 transform group-hover:-translate-y-1 transition-transform duration-300"
       />
-    </div>
+    </button>
   );
 };
 

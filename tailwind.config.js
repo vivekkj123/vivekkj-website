@@ -7,17 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary-fg": "#FEF303",
-        "primary-bg": "#0A091B",
-        "secondary-bg": "#22213A",
-      },
-      gridTemplateColumns: {
-        "hero-grid": "0.1fr 2fr 1fr",
+        'glass': 'rgba(255, 255, 255, 0.1)',
+        'glass-card': 'rgba(255, 255, 255, 0.05)',
+        'glass-stroke': 'rgba(255, 255, 255, 0.15)',
+        'primary-fg': '#0530AD',
+        'primary-bg': '#0A0A0B',
+        'secondary-bg': 'rgba(255, 255, 255, 0.03)',
+        'code-bg': 'rgba(71, 85, 105, 0.8)',
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-
-  ],
+  plugins: [require('@tailwindcss/typography')],
 };

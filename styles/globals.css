@@ -1,21 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cal-sans');
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/GeistSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/GeistSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/GeistSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/GeistSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
-  --swiper-theme-color: #fef303;
+  --swiper-theme-color: #0530AD;
 }
-
 html,
 body {
   padding: 0;
-  background-color: #0a091b;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  /* I don't need scroll-bar */
-  /* -ms-overflow-style: none;
-  scrollbar-width: none; */
-  scrollbar-width: auto;
-  scrollbar-color: #fef303 #0a091b;
+  font-family: 'Geist Sans', system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top right, #1a1a1a, #0A0A0B);
+  color: white;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/noise.png') repeat;
+  opacity: 0.25;
+  pointer-events: none;
 }
 
 *::-webkit-scrollbar {
@@ -62,4 +100,59 @@ img+em {
   color: #989898;
   text-align: center;
   @apply text-sm
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
 }

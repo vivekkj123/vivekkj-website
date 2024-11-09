@@ -1,7 +1,78 @@
-.Skills > div > ul > li{
-    @apply flex gap-2 mx-2 items-center bg-secondary-bg text-xl w-max my-1 px-4 py-2 rounded-3xl
+.Skills {
+  margin-top: 2rem;
 }
 
-.Skills > div > ul{
-    @apply flex md:grid md:grid-cols-2 w-full flex-wrap justify-center
+.Skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
+
+@media (min-width: 768px) {
+  .Skills ul {
+    justify-content: flex-start;
+  }
+}
+
+.Skills li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  font-size: 1.125rem;
+  color: #e5e7eb;
+  margin: 0.25rem;
+}
+
+.Skills li:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.Skills i,
+.Skills svg {
+  font-size: 1.25rem;
+  opacity: 0.8;
+}
+
+.Skills li:hover i,
+.Skills li:hover svg {
+  opacity: 1;
+}
+
+/* Animation for skill items */
+.Skills li {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger animation delay for each item */
+.Skills li:nth-child(1) { animation-delay: 0.1s; }
+.Skills li:nth-child(2) { animation-delay: 0.2s; }
+.Skills li:nth-child(3) { animation-delay: 0.3s; }
+.Skills li:nth-child(4) { animation-delay: 0.4s; }
+.Skills li:nth-child(5) { animation-delay: 0.5s; }
+.Skills li:nth-child(6) { animation-delay: 0.6s; }
+.Skills li:nth-child(7) { animation-delay: 0.7s; }
+.Skills li:nth-child(8) { animation-delay: 0.8s; }

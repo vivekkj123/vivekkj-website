@@ -48,12 +48,17 @@ Abraham was a potential contributor to many FOSS projects in Kerala and across I
 ### Releases dedicated to him:
 
 [Tails project](https://tails.net/news/version_5.17.1/index.en.html)
+
 [Hoppscotch](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.8.1)
+
 [waka-readme](https://github.com/athul/waka-readme/releases/tag/v0.2.5)
 
 ### Other posts about him:
 
 Debian project : https://www.debian.org/News/2023/20230914
+
 sahilsters blog : https://blog.sahilister.in/2023/09/abraham-raji/
+
 Ravi's blog : https://ravidwivedi.in/posts/debconf23/
+
 highvoltage's Blog: https://jonathancarter.org/2023/09/21/debconf23/

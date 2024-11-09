@@ -1,93 +1,69 @@
-import {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { 
+  faReact, 
+  faNodeJs, 
+  faSass, 
   faFigma,
-  faGitAlt,
-  faJava,
-  faLinux,
-  faNodeJs,
-  faPython,
-  faReact,
-  faSass,
   faVuejs,
+  faJava,
+  faPython,
+  faGitAlt,
+  faLinux
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import styles from "../styles/Skills.module.css";
 
 const Skills = () => {
+  const skillsList = [
+    { icon: faReact, name: "ReactJS" },
+    { icon: "ai-nextjs-fill", name: "NextJS", isCustomIcon: true },
+    { icon: "bx bxl-flutter", name: "Flutter", isCustomIcon: true },
+    { icon: faNodeJs, name: "Node.JS" },
+    { icon: faReact, name: "React Native" },
+    { icon: "bx bxl-tailwind-css", name: "Tailwind CSS", isCustomIcon: true },
+    { icon: faSass, name: "Sass, Scss" },
+    { icon: faFigma, name: "Figma" },
+    { icon: faVuejs, name: "VueJS" },
+    { icon: "bx bxl-c-plus-plus", name: "C/C++", isCustomIcon: true },
+    { icon: faJava, name: "Java" },
+    { icon: faPython, name: "Python" },
+    { icon: faGitAlt, name: "Git" },
+    { icon: faLinux, name: "GNU/Linux" },
+    { icon: faDatabase, name: "Databases (MongoDB, MySQL)" },
+    { icon: "bx bxl-firebase", name: "Firebase", isCustomIcon: true }
+  ];
+
   return (
     <section
       data-aos="zoom-in-down"
       id="skills"
-      className="p-8 text-center md:text-left md:p-32"
+      className="py-20 px-4 text-center md:text-left"
     >
-      <div>
-        <h1 className="text-4xl md:text-6xl font-bold">Skills 🚀</h1>
-        <p className="text-xl mt-5">
-          I&apos;m well experienced in these technologies
-        </p>
-        <div
-          className={`${styles.Skills}  md:mt-16 mt-5 leading-10 text-lg md:text-2xl`}
-        >
-          <div>
+      <div className="max-w-7xl mx-auto">
+        <span className="flex my-5 text-4xl items-center gap-3 justify-center md:justify-start">
+          <h2 className="font-bold bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
+            Skills 
+          </h2>
+          🚀
+        </span>
+
+        <div className="backdrop-blur-xl bg-white/5 rounded-3xl border border-white/10 p-8 lg:p-12">
+          <p className="text-xl mt-5 text-gray-300">
+            I&apos;m well experienced in these technologies
+          </p>
+          
+          <div className={styles.Skills}>
             <ul>
-              <li>
-                <FontAwesomeIcon icon={faReact} /> ReactJS
-              </li>
-              <li>
-                <i className="ai-nextjs-fill"></i> NextJS
-              </li>
-              <li>
-                <i className="bx bxl-flutter"></i> Flutter
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faNodeJs} /> Node.JS
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faReact} /> React Native
-              </li>
-              <li>
-                <i className="bx bxl-tailwind-css"></i> Tailwind CSS
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faSass} />
-                Sass, Scss
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faFigma} /> &nbsp;Figma
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <FontAwesomeIcon icon={faVuejs} /> VueJS
-              </li>
-              <li>
-                <i className="bx bxl-c-plus-plus"></i>C/C++
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faJava} /> Java
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faPython} />
-                Python
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faGitAlt} />
-                Git
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faLinux} />
-                GNU/Linux
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faDatabase} />
-                Databases (MongoDB, MySQL)
-              </li>
-              <li>
-                <i className="bx bxl-firebase"></i>Firebase
-              </li>
+              {skillsList.map((skill, index) => (
+                <li key={index}>
+                  {skill.isCustomIcon ? (
+                    <i className={skill.icon}></i>
+                  ) : (
+                    <FontAwesomeIcon icon={skill.icon} />
+                  )}
+                  {skill.name}
+                </li>
+              ))}
             </ul>
           </div>
         </div>

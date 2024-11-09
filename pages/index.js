@@ -7,16 +7,28 @@ import Projects from "../components/Projects";
 import ScrollToTop from "../components/ScrollToTop";
 import Skills from "../components/Skills";
 import WhoAmI from "../components/WhoAmI";
-const Home = () => {
+import LatestPosts from "../components/LatestPosts";
+import { getAllPosts } from '../lib/posts';
+
+export async function getStaticProps() {
+  const posts = getAllPosts();
+  return {
+    props: {
+      posts,
+    },
+  };
+}
+let resetToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+const Home = ({ posts }) => {
   useEffect(() => {
     AOS.init();
   }, []);
-  let resetToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
   return (
     <React.Fragment>
       <div className="pb-20 Home bg-primary-bg text-white">
@@ -24,6 +36,7 @@ const Home = () => {
         <Hero />
         <WhoAmI />
         <Skills />
+        <LatestPosts posts={posts} />
         <Projects />
         <ContactMe />
       </div>

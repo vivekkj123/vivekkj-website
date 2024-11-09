@@ -7,71 +7,98 @@ import {
   faLanguage,
   faLaptopCode,
   faMapMarkerAlt,
-  faMobileScreen
+  faMobileScreen,
+  faServer,
+  faGraduationCap,
+  faHeart
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
 const WhoAmI = () => {
   return (
-    <section
-      data-aos="fade-up"
-      data-aos-delay="300"
-      className="p-6
-       md:p-32 mt-20 md:text-left
-       "
-    >
-      <h1 className="text-primary-fg text-4xl md:text-6xl font-bold font-mono">
-        $whoami
-      </h1>
-      <div className="grid md:grid-cols-2 leading-loose mt-10 md:mt-20 text-xl">
-        <div className="bg-secondary-bg w-max h-max px-10 py-8 rounded-2xl">
-          <p>
-            <FontAwesomeIcon className="mx-2" icon={faMapMarkerAlt} /> Kerala,
-            India
-          </p>
-          <p>
-            <FontAwesomeIcon
-              href="emailto:contact@vivekkj.in"
-              className="mx-2"
-              icon={faEnvelope}
-            />{" "}
-            contact[at]vivekkj[dot]in
-          </p>
-        </div>
-        <div className="leading-loose bg-secondary-bg px-10 py-8 rounded-2xl mt-20 md:mt-0 ">
-          <ul>
-            <li>
-              <FontAwesomeIcon icon={faLaptopCode} />
-              &nbsp; MERN Full Stack Developer
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faMobileScreen} /> &nbsp; Hybrid App
-              Developer (React Native, Flutter)
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCode} />
-              &nbsp; GDSC Lead (SCET)
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCodeCompare} /> &nbsp; Open-Source
-              Contributor
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faDebian} /> &nbsp; Debian Maintainer
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faLanguage} /> &nbsp;Software Translator
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCodePullRequest} /> &nbsp; FOSS
-              Enthusiast
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faLinux} />
-              &nbsp;&nbsp;&nbsp;GNU/Linux User
-            </li>
-          </ul>
+    <section className="py-20 px-4" id="about">
+      <div className="max-w-7xl mx-auto space-y-12">
+        <h2 className="text-4xl font-bold bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
+          About Me
+        </h2>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Main content */}
+          <div className="col-span-2 backdrop-blur-xl bg-white/5 rounded-3xl border border-white/10 p-8 space-y-6">
+            {/* Contact Info */}
+            <div className="flex flex-col gap-4 mb-6">
+              
+              <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faGraduationCap} className="text-primary-fg" />
+                <span>B.Tech CSE Student at SCET Kodakara</span>
+              </div>
+            </div>
+
+            <p className="text-gray-300 leading-relaxed">
+              I&apos;m a passionate Full Stack Developer from Kerala, India, with expertise in building modern web and mobile applications. Currently pursuing my B.Tech in Computer Science and Engineering at Sahrdaya College of Engineering and Technology (Autonomous), Kodakara.
+            </p>
+            
+            <p className="text-gray-300 leading-relaxed">
+              I&apos;m also an active member of Free Software Community and various FOSS and OSS Projects. I love contributing to open source projects and building solutions that make a difference.
+            </p>
+
+            <div className="pt-4">
+              <h3 className="text-xl font-semibold mb-4">What I Love</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-gray-300">
+                  <FontAwesomeIcon icon={faHeart} className="text-primary-fg" />
+                  <span>Building innovative web and mobile applications</span>
+                </div>
+                <div className="flex items-center gap-3 text-gray-300">
+                  <FontAwesomeIcon icon={faHeart} className="text-primary-fg" />
+                  <span>Contributing to open-source projects</span>
+                </div>
+                <div className="flex items-center gap-3 text-gray-300">
+                  <FontAwesomeIcon icon={faHeart} className="text-primary-fg" />
+                  <span>Learning and exploring new technologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Tech Stack card */}
+          <div className="backdrop-blur-xl bg-white/5 rounded-3xl border border-white/10 p-8 space-y-6">
+            <h3 className="text-2xl font-bold">Tech Stack & Roles</h3>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faLaptopCode} className="text-primary-fg" />
+                <span>MERN Full Stack Developer</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faMobileScreen} className="text-primary-fg" />
+                <span>Hybrid App Developer</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faCode} className="text-primary-fg" />
+                <span>GDSC Lead (2023-24, SCET)</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faCodeCompare} className="text-primary-fg" />
+                <span>Open-Source Contributor</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faDebian} className="text-primary-fg" />
+                <span>Debian Maintainer</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faLanguage} className="text-primary-fg" />
+                <span>Software Translator</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faCodePullRequest} className="text-primary-fg" />
+                <span>FOSS Enthusiast</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faLinux} className="text-primary-fg" />
+                <span>GNU/Linux User</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
