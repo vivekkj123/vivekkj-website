@@ -10,7 +10,7 @@ module.exports = {
         'glass': 'rgba(255, 255, 255, 0.1)',
         'glass-card': 'rgba(255, 255, 255, 0.05)',
         'glass-stroke': 'rgba(255, 255, 255, 0.15)',
-        'primary-fg': '#0530AD',
+        'primary-fg': '#165bdc',
         'primary-bg': '#0A0A0B',
         'secondary-bg': 'rgba(255, 255, 255, 0.03)',
         'code-bg': 'rgba(71, 85, 105, 0.8)',

@@ -87,7 +87,7 @@ const WhoAmI = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <FontAwesomeIcon icon={faLanguage} className="text-primary-fg" />
-                <span>Software Translator</span>
+                <span>Wikipedia Contributor and Software Translator</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <FontAwesomeIcon icon={faCodePullRequest} className="text-primary-fg" />

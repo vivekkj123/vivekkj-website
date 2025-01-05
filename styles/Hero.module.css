@@ -62,7 +62,7 @@
 
 .heroName {
   font-family: 'Cal Sans', sans-serif;
-  background: linear-gradient(to right, #0530AD, #0062FF);
+  background: linear-gradient(to right, #165bdc, #0062FF);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -128,5 +128,5 @@
 
 .post > * > a {
   text-decoration: underline;
-  color: #0530AD;
+  color: #165bdc;
 }

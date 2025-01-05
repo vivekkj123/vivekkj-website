@@ -51,4 +51,4 @@ buttons[2].checked = true;
 Please refer to the [readme](https://github.com/vivekkj123/linways-auto-feedback/tree/main#linways-auto-feedback) for instructions on how to use/install the extension.
 
 
-### **Thank you for reading <3**
+ **Thank you for reading <3**

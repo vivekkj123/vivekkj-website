@@ -21,7 +21,7 @@ const Posts = ({ posts = [] }) => {
       <div className="max-w-7xl mx-auto py-20">
         <h1 className="text-5xl md:text-7xl font-bold mb-6">Blog</h1>
         <p className="text-xl text-gray-400 mb-12 max-w-3xl">
-          A place for sharing my thoughts, ideas, and experiences.
+          A place for sharing my thoughts, ideas, and experiences. All opinions shared on this blog are solely my own and do not represent the views of any organization or entity.
         </p>
 
         {/* Search Bar */}
