@@ -1,16 +1,14 @@
 import { faDebian, faLinux } from "@fortawesome/free-brands-svg-icons";
 import {
+  faBriefcase,
   faCode,
   faCodeCompare,
   faCodePullRequest,
-  faEnvelope,
+  faGraduationCap,
+  faHeart,
   faLanguage,
   faLaptopCode,
-  faMapMarkerAlt,
-  faMobileScreen,
-  faServer,
-  faGraduationCap,
-  faHeart
+  faMobileScreen
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -27,10 +25,13 @@ const WhoAmI = () => {
           <div className="col-span-2 backdrop-blur-xl bg-white/5 rounded-3xl border border-white/10 p-8 space-y-6">
             {/* Contact Info */}
             <div className="flex flex-col gap-4 mb-6">
-              
+            <div className="flex items-center gap-3 text-gray-300">
+                <FontAwesomeIcon icon={faBriefcase} className="text-primary-fg" />
+                <span>Software Developer Intern @ IBM India Software Labs, Kochi</span>
+              </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <FontAwesomeIcon icon={faGraduationCap} className="text-primary-fg" />
-                <span>B.Tech CSE Student at SCET Kodakara</span>
+                <span>Final Year B.Tech CSE Student @ Sahrdaya CET, Kodakara</span>
               </div>
             </div>
 

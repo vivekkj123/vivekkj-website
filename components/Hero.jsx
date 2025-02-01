@@ -59,7 +59,7 @@ const Hero = () => {
               Hi, I&apos;m <br className="block md:hidden" /> <span className={styles.heroName}>Vivek K J</span>
             </h1>
             <p className="text-xl text-gray-300">
-              Full Stack Developer & Open Source Enthusiast
+              Software Developer & Free Software Enthusiast
             </p>
             
             <div className="flex items-center gap-4 text-gray-300">
