@@ -10,7 +10,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const [Loading, setLoading] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/CW30z8f/Vivek-K-J.jpg"
+          content="https://i.ibb.co/fz775kXd/VIVEK-K-J-02-01-2025-06-29-PM.jpg"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://metatags.io/" />
@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/CW30z8f/Vivek-K-J.jpg"
+          content="https://i.ibb.co/fz775kXd/VIVEK-K-J-02-01-2025-06-29-PM.jpg"
         />
         <meta
           content="vivek, VIVEK K J, foss, debian, web developer, vivu, വിവേക്, വിവേക് കെ ജെ, programmer, developer, open source"
@@ -68,11 +68,11 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon-512x512.png"></link>
-        
+
         <meta name="theme-color" content="#fef303" />
       </Head>
       <Script src="https://unpkg.com/akar-icons-fonts"></Script>
-      
+
       {Loading ? (
         <LoadingLayout>
           <PacmanLoader loading={Loading} color="#fef303" />
