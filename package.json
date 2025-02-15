@@ -19,7 +19,7 @@
     "disqus-react": "^1.1.5",
     "gray-matter": "^4.0.3",
     "marked": "^14.1.4",
-    "next": "15.0.3",
+    "next": "^15.1.6",
     "next-image-export-optimizer": "^1.6.1",
     "next-seo": "^6.1.0",
     "react": "^18.3.1",

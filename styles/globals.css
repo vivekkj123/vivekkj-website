@@ -94,7 +94,7 @@ pre {
 }
 
 /*  image caption for markdown posts */
-img+em {
+img+em, p em:only-child {
   display: block;
   margin-top: -20px;
   color: #989898;
