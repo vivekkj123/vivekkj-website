@@ -99,6 +99,8 @@ The competition opened an unexpected door to IBM employment. On August 29th, we 
 
 The 45-minute interview included technical and HR questions, and despite the pressure of concurrent series exams, we maintained our composure. On September 18th, we received offers for a 6-month internship followed by full-time positions. Though bittersweet that only two of us were selected, we were grateful for the opportunity.
 
+Just think about it—being the #1 placement from your college and department, you have nothing to do but sit alone in the classroom while others prepare for their placements. There’s nothing prouder than that! :)
+
 After completing the onboarding process, I officially joined IBM ISL Kochi on January 27th, receiving my ID card and my workstation.
 
 ![](/images/Posts/from-gen-ai-challenge-to-IBMer/id-card-and-macbook.jpg)
