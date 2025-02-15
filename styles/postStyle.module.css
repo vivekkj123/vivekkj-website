@@ -17,6 +17,8 @@
 .post > iframe{
   margin-left: auto;
   margin-right: auto;
+  aspect-ratio: 16 / 9;
+    width: 100% !important;
 }
 .post > * > a {
   text-decoration: underline;

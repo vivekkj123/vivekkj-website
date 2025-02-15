@@ -88,6 +88,8 @@ const Post = ({
           content={`https://www.vivekkj.in/posts/${slug}`}
         />
         <meta property="og:title" content={`${title} | Vivek K J`} />
+        <meta property="description" content={description}/>
+        <meta property="og:description" content={description}/>
         <meta property="twitter:title" content={`${title} | Vivek K J`} />
         <meta
           content={

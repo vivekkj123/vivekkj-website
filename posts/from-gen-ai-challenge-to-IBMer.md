@@ -79,7 +79,7 @@ We returned to IBM's office on July 9th to refine our product:
 
 We were honored to receive an invitation to India's first International GenAI Conclave at the prestigious Grand Hyatt, Kochi. The event, held on July 11th and 12th, was a landmark occasion inaugurated by Kerala Chief Minister Pinarayi Vijayan. While I couldn't attend in person due to a prior commitment at the Google India office at Bengaluru for my GDSC Graduation event, I contributed remotely and watched the livestream.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B0OYd-Bit2Y?si=X0yvaNVxIWJ1ZITv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/B0OYd-Bit2Y?si=X0yvaNVxIWJ1ZITv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Our team secured the first runner-up position, earning recognition in local media and even a congratulatory post from our university.
 
