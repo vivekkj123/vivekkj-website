@@ -1,4 +1,4 @@
-import AOS from "aos";
+import dynamic from "next/dynamic";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import ContactMe from "../components/ContactMe";
@@ -26,7 +26,11 @@ let resetToTop = () => {
 };
 const Home = ({ posts }) => {
   useEffect(() => {
-    AOS.init();
+    const initAOS = async () => {
+      const AOS = await import("aos");
+      AOS.default.init();
+    };
+    initAOS();
   }, []);
 
   return (

@@ -129,6 +129,7 @@ const Hero = () => {
                   alt="Buy Me A Coffee"
                   width={150}
                   height={60}
+                  loading="lazy"
                 />
               </a>
               <a 
@@ -149,7 +150,7 @@ const Hero = () => {
                 width={200}
                 height={200}
                 className="object-cover object-top rounded-full"
-                priority
+                loading="lazy"
               />
             </div>
           </div>

@@ -37,6 +37,7 @@ const LatestPosts = ({ posts }) => {
                     fill
                     style={{ objectFit: "cover" }}
                     alt={post.frontmatter.title}
+                    loading="lazy"
                   />
                 </div>
               )}

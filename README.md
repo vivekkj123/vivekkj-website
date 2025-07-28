@@ -32,3 +32,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Performance Optimizations
+
+- Images use lazy loading and explicit sizing for better LCP and CLS.
+- Heavy JS libraries (AOS, PacmanLoader) are dynamically imported to reduce initial bundle size.
+- Unused console logs removed from production code.
+- Tailwind CSS is configured to purge unused styles in production.
+- Consider running `ANALYZE=true next build` to analyze your bundle and further optimize dependencies.
+- For best font performance, migrate to `next/font` for local fonts.

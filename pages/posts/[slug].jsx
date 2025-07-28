@@ -37,7 +37,6 @@ const Post = ({
         .replace(/[^a-z0-9]+/g, "-"),
     }));
     setHeadings(extractedHeadings);
-    console.log(extractedHeadings);
     
     // Intersection Observer setup
     const observer = new IntersectionObserver(

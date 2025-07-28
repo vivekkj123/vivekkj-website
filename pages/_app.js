@@ -2,11 +2,13 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Script from "next/script";
 import React, { useEffect, useState } from "react";
-import { PacmanLoader } from "react-spinners";
+import dynamic from "next/dynamic";
 import "tailwindcss/tailwind.css";
 import Layout from "../components/Layout";
 import LoadingLayout from "../components/LoadingLayout";
 import "../styles/globals.css";
+
+const PacmanLoader = dynamic(() => import("react-spinners/PacmanLoader"), { ssr: false });
 
 function MyApp({ Component, pageProps }) {
   const [Loading, setLoading] = useState(false);

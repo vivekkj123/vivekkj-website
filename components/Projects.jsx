@@ -36,6 +36,7 @@ const Projects = () => {
                     fill
                     style={{ objectFit: "contain" }}
                     alt={project.title}
+                    loading="lazy"
                   />
                 ) : (
                   <Swiper
@@ -51,6 +52,7 @@ const Projects = () => {
                           fill
                           style={{ objectFit: "contain" }}
                           alt={project.title}
+                          loading="lazy"
                         />
                       </SwiperSlide>
                     ))}
