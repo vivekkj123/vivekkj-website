@@ -1,9 +1,10 @@
 import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";
+import { useMemo } from "react";
 
 const LatestPosts = ({ posts }) => {
-  // Get the 3 most recent posts
-  const latestPosts = posts.slice(0, 3);
+  // Use useMemo for better performance
+  const latestPosts = useMemo(() => posts.slice(0, 3), [posts]);
 
   return (
     <section className="py-20 px-4">

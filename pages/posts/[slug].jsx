@@ -50,8 +50,8 @@ const Post = ({
       { rootMargin: "-20% 0px -80% 0px" }
     );
 
-    // Wait for content to be rendered
-    setTimeout(() => {
+    // Use requestAnimationFrame instead of setTimeout for better performance
+    requestAnimationFrame(() => {
       document.querySelectorAll("h2, h3").forEach((heading) => {
         // Ensure heading has an ID that matches our extracted headings
         if (!heading.id) {
@@ -61,7 +61,7 @@ const Post = ({
         }
         observer.observe(heading);
       });
-    }, 100);
+    });
 
     return () => observer.disconnect();
   }, [content]);

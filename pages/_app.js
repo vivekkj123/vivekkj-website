@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Script from "next/script";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import "tailwindcss/tailwind.css";
@@ -72,8 +71,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" href="/icon-512x512.png"></link>
 
         <meta name="theme-color" content="#fef303" />
+        <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onLoad="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" /></noscript>
       </Head>
-      <Script src="https://unpkg.com/akar-icons-fonts"></Script>
 
       {Loading ? (
         <LoadingLayout>

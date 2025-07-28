@@ -36,8 +36,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Performance Optimizations
 
 - Images use lazy loading and explicit sizing for better LCP and CLS.
-- Heavy JS libraries (AOS, PacmanLoader) are dynamically imported to reduce initial bundle size.
+- Heavy JS libraries (AOS, PacmanLoader, Swiper, Disqus) are dynamically imported to reduce initial bundle size.
 - Unused console logs removed from production code.
 - Tailwind CSS is configured to purge unused styles in production.
+- External CSS (boxicons) is preloaded with fallback for better performance.
+- Components use `useMemo` for expensive calculations (filtered posts, project lists).
+- Replaced `setTimeout` with `requestAnimationFrame` for better performance in intersection observers.
+- Removed unnecessary state and `useEffect` in favor of `useMemo` where possible.
 - Consider running `ANALYZE=true next build` to analyze your bundle and further optimize dependencies.
 - For best font performance, migrate to `next/font` for local fonts.

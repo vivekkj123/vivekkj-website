@@ -1,4 +1,6 @@
-import { DiscussionEmbed } from "disqus-react";
+import dynamic from "next/dynamic";
+
+const DiscussionEmbed = dynamic(() => import("disqus-react").then(mod => ({ default: mod.DiscussionEmbed })), { ssr: false });
 
 const DisqusComments = ({ url, identifier, title }) => {
   const disqusConfig = {

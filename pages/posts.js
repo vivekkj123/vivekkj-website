@@ -3,14 +3,18 @@ import ExportedImage from "next-image-export-optimizer";
 import Head from "next/head";
 import Link from "next/link";
 import path from "path";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { sortByDate } from "../utils";
 
 const Posts = ({ posts = [] }) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const filteredPosts = posts.filter(post => 
-    post.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  
+  // Use useMemo for better performance
+  const filteredPosts = useMemo(() => {
+    return posts.filter(post => 
+      post.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [posts, searchTerm]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0A0A0B] to-[#1A1A1A] text-white px-4 md:px-8 lg:px-16">
@@ -53,6 +57,7 @@ const Posts = ({ posts = [] }) => {
                     fill
                     style={{ objectFit: "cover" }}
                     alt={post.frontmatter.title}
+                    loading="lazy"
                   />
                 </div>
               )}
@@ -82,36 +87,27 @@ const Posts = ({ posts = [] }) => {
 };
 
 export async function getStaticProps() {
-  try {
-    const fs = require('fs');
-    const files = fs.readdirSync(path.join('posts'));
+  const fs = require('fs');
+  const files = fs.readdirSync(path.join('posts'));
+  
+  const posts = files.map(filename => {
+    const markdownWithMeta = fs.readFileSync(
+      path.join('posts', filename),
+      'utf-8'
+    );
+    const { data: frontmatter } = matter(markdownWithMeta);
     
-    const posts = files.map(filename => {
-      const markdownWithMeta = fs.readFileSync(
-        path.join('posts', filename),
-        'utf-8'
-      );
-      const { data: frontmatter } = matter(markdownWithMeta);
-      
-      return {
-        frontmatter,
-        slug: filename.replace('.md', '')
-      };
-    });
+    return {
+      frontmatter,
+      slug: filename.replace('.md', '')
+    };
+  });
 
-    return {
-      props: {
-        posts: posts.sort(sortByDate)
-      }
-    };
-  } catch (error) {
-    console.error('Error loading posts:', error);
-    return {
-      props: {
-        posts: []
-      }
-    };
-  }
+  return {
+    props: {
+      posts: posts.sort(sortByDate)
+    }
+  };
 }
 
 export default Posts;

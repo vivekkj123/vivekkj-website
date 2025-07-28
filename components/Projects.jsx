@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState, useMemo } from "react";
 import styles from "../styles/Projects.module.css";
 import projects from "../json/projects.json";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,10 +10,10 @@ import "swiper/css/navigation";
 
 const Projects = () => {
   const [ShowMore, setShowMore] = useState(false);
-  const [Projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    !ShowMore ? setProjects(projects.slice(0, 6)) : setProjects(projects);
+  
+  // Use useMemo instead of useEffect for better performance
+  const displayedProjects = useMemo(() => {
+    return ShowMore ? projects : projects.slice(0, 6);
   }, [ShowMore]);
 
   return (
@@ -24,7 +24,7 @@ const Projects = () => {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Projects.map((project) => (
+          {displayedProjects.map((project) => (
             <div
               key={project.title}
               className={`${styles.project} h-[600px]`}
