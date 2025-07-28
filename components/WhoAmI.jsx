@@ -27,20 +27,17 @@ const WhoAmI = () => {
             <div className="flex flex-col gap-4 mb-6">
             <div className="flex items-center gap-3 text-gray-300">
                 <FontAwesomeIcon icon={faBriefcase} className="text-primary-fg" />
-                <span>Software Developer Intern @ IBM India Software Labs, Kochi</span>
+                <span>Software Engineer @ IBM India Software Labs, Kochi</span>
               </div>
-              <div className="flex items-center gap-3 text-gray-300">
-                <FontAwesomeIcon icon={faGraduationCap} className="text-primary-fg" />
-                <span>Final Year B.Tech CSE Student @ Sahrdaya CET, Kodakara</span>
-              </div>
+            
             </div>
 
             <p className="text-gray-300 leading-relaxed">
-              I&apos;m a passionate Full Stack Developer from Kerala, India, with expertise in building modern web and mobile applications. Currently pursuing my B.Tech in Computer Science and Engineering at Sahrdaya College of Engineering and Technology (Autonomous), Kodakara.
+              I&apos;m a passionate Software Engineer from Kerala, India, with expertise in building modern software that makes a difference.
             </p>
             
             <p className="text-gray-300 leading-relaxed">
-              I&apos;m also an active member of Free Software Community and various FOSS and OSS Projects. I love contributing to open source projects and building solutions that make a difference.
+            I&apos;m also an active member of several Free Software communities and contribute to various FOSS and OSS projects. I enjoy building open-source solutions that make a real impact.
             </p>
 
             <div className="pt-4">
@@ -68,24 +65,21 @@ const WhoAmI = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-gray-300">
                 <FontAwesomeIcon icon={faLaptopCode} className="text-primary-fg" />
-                <span>MERN Full Stack Developer</span>
+                <span>Software Engineer</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
-                <FontAwesomeIcon icon={faMobileScreen} className="text-primary-fg" />
-                <span>Hybrid App Developer</span>
-              </div>
-              <div className="flex items-center gap-3 text-gray-300">
-                <FontAwesomeIcon icon={faCode} className="text-primary-fg" />
-                <span>GDSC Lead (2023-24, SCET)</span>
+                <FontAwesomeIcon icon={faDebian} className="text-primary-fg" />
+                <span>Debian Maintainer</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <FontAwesomeIcon icon={faCodeCompare} className="text-primary-fg" />
                 <span>Open-Source Contributor</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
-                <FontAwesomeIcon icon={faDebian} className="text-primary-fg" />
-                <span>Debian Maintainer</span>
+                <FontAwesomeIcon icon={faCode} className="text-primary-fg" />
+                <span>GDSC Lead (2023-24, SCET)</span>
               </div>
+              
               <div className="flex items-center gap-3 text-gray-300">
                 <FontAwesomeIcon icon={faLanguage} className="text-primary-fg" />
                 <span>Wikipedia Contributor and Software Translator</span>

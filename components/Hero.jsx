@@ -6,7 +6,8 @@ import {
   faLinkedin,
   faMastodon,
   faTelegram,
-  faTwitter
+  faTwitter,
+  faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
@@ -42,7 +43,7 @@ const Hero = () => {
     { icon: faLinkedin, url: "https://www.linkedin.com/in/iamvivekkj" },
     { icon: faGithub, url: "https://www.github.com/vivekkj123" },
     { icon: faGitlab, url: "https://www.gitlab.com/vivekkj" },
-    { icon: faTwitter, url: "https://www.twitter.com/iamvivekkj" },
+    { icon: faXTwitter, url: "https://www.x.com/iamvivekkj" },
     { icon: faInstagram, url: "https://www.instagram.com/iamvivekkj" },
     { icon: faFacebook, url: "https://www.facebook.com/iamvivekkj" },
     { icon: faTelegram, url: "https://www.t.me/iamvivekkj" },
@@ -59,7 +60,7 @@ const Hero = () => {
               Hi, I&apos;m <br className="block md:hidden" /> <span className={styles.heroName}>Vivek K J</span>
             </h1>
             <p className="text-xl text-gray-300">
-              Software Developer & Free Software Enthusiast
+              Software Engineer & Free Software Enthusiast
             </p>
             
             <div className="flex items-center gap-4 text-gray-300">

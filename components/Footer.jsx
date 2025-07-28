@@ -7,7 +7,7 @@ import {
   faLinkedin,
   faMastodon,
   faTelegram,
-  faTwitter,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/Footer.module.css";
@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">Vivek K J</h3>
               <p className="text-gray-300">
-                Full Stack Developer & Open Source Enthusiast
+                Software Engineer & Open Source Enthusiast
               </p>
             </div>
           </div>
@@ -95,11 +95,11 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faGitlab} size="lg" />
               </Link>
               <Link
-                href="https://www.twitter.com/iamvivekkj"
+                href="https://www.x.com/iamvivekkj"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faTwitter} size="lg" />
+                <FontAwesomeIcon icon={faXTwitter} size="lg" />
               </Link>
               <Link
                 href="https://www.instagram.com/iamvivekkj"
