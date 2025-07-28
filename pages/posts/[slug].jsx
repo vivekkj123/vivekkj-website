@@ -66,59 +66,134 @@ const Post = ({
     return () => observer.disconnect();
   }, [content]);
 
+  // Generate structured data for the blog post
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": title,
+    "description": description,
+    "author": {
+      "@type": "Person",
+      "name": "Vivek K J",
+      "url": "https://vivekkj.in"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vivek K J",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vivekkj.in/icon-512x512.png"
+      }
+    },
+    "datePublished": date,
+    "dateModified": date,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://vivekkj.in/posts/${slug}`
+    },
+    "image": `https://og-image-generator-blog.vercel.app/api/og?title=${encodeURIComponent(title)}`,
+    "keywords": tags ? tags.join(", ") : "",
+    "articleSection": "Technology",
+    "wordCount": content.split(' ').length,
+    "timeRequired": `PT${Math.ceil(ReadTime.minutes)}M`
+  };
+
+  const canonicalUrl = `https://vivekkj.in/posts/${slug}`;
+  const ogImage = `https://og-image-generator-blog.vercel.app/api/og?title=${encodeURIComponent(title)}`;
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0A0A0B] to-[#1A1A1A] text-white">
       <Head>
-        <meta
-          property="og:image"
-          content={`https://og-image-generator-blog.vercel.app/api/og?title=${encodeURIComponent(
-            title
-          )}`}
-        />
-        <meta
-          property="twitter:image"
-          content={`https://og-image-generator-blog.vercel.app/api/og?title=${encodeURIComponent(
-            title
-          )}`}
-        />
+        <title>{`${title} | Vivek K J`}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={tags ? tags.join(", ") : ""} />
+        <meta name="author" content="Vivek K J" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph */}
         <meta property="og:type" content="article" />
-        <meta
-          property="og:url"
-          content={`https://www.vivekkj.in/posts/${slug}`}
-        />
-        <meta property="og:title" content={`${title} | Vivek K J`} />
-        <meta property="description" content={description}/>
-        <meta property="og:description" content={description}/>
-        <meta property="twitter:title" content={`${title} | Vivek K J`} />
-        <meta
-          content={
-            `vivek, VIVEK K J, foss, debian, web developer, vivu, വിവേക്, വിവേക് കെ ജെ, programmer, developer, open source, ` +
-            tags.join(", ")
-          }
-          name="keywords"
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Vivek K J" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="article:published_time" content={date} />
+        <meta property="article:modified_time" content={date} />
+        <meta property="article:author" content="Vivek K J" />
+        {tags && tags.map(tag => (
+          <meta key={tag} property="article:tag" content={tag} />
+        ))}
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@iamvivekkj" />
+        <meta name="twitter:creator" content="@iamvivekkj" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImage} />
+        
+        {/* Additional SEO */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#fef303" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
         />
       </Head>
+      
       <NextSeo
-        title={`${title} | Vivek K J`}
+        title={title}
         description={description}
+        canonical={canonicalUrl}
         openGraph={{
-          url: `https://vivekkj.in/${slug}`,
+          type: 'article',
+          url: canonicalUrl,
           title: title,
           description: description,
           images: [
             {
-              url: `https://og-image-generator-blog.vercel.app/api/og?title=${encodeURIComponent(
-                title
-              )}`,
-              width: 800,
-              height: 600,
+              url: ogImage,
+              width: 1200,
+              height: 630,
+              alt: title,
             },
           ],
+          site_name: 'Vivek K J',
         }}
         twitter={{
-          handle: "@iamvivekkj",
-          site: "@iamvivekkj",
+          handle: '@iamvivekkj',
+          site: '@iamvivekkj',
+          cardType: 'summary_large_image',
         }}
+        additionalMetaTags={[
+          {
+            name: 'keywords',
+            content: tags ? tags.join(', ') : '',
+          },
+          {
+            name: 'author',
+            content: 'Vivek K J',
+          },
+          {
+            property: 'article:published_time',
+            content: date,
+          },
+          {
+            property: 'article:modified_time',
+            content: date,
+          },
+        ]}
       />
 
       <div className="max-w-7xl mx-auto px-4 py-20">
@@ -213,9 +288,8 @@ const Post = ({
           )}
         </div>
         <DisqusComments
-            url={`https://vivekkj.in/posts/${slug}`}
+            url={canonicalUrl}
             identifier={slug}
-            
             title={title}
           />
       </div>

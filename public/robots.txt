@@ -1,4 +1,9 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://vivekkj.in/sitemap.xml
+
+# Allow API endpoints
 Allow: /api/og/*

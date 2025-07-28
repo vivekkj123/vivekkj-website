@@ -5,8 +5,23 @@ const withPWA = require("@ducanh2912/next-pwa").default({
   skipWaiting: true,
   disable: process.env.NODE_ENV === "development",
 });
+
 const nextConfig = withPWA({
   reactStrictMode: true,
+  // Next.js 15 features
+  experimental: {
+    // Enable new image optimization features
+    optimizePackageImports: ['@fortawesome/fontawesome-svg-core', '@fortawesome/free-brands-svg-icons', '@fortawesome/free-solid-svg-icons'],
+  },
+  // Next.js 15 Turbopack configuration
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
+  },
   images: {
     loader: "custom",
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -19,8 +34,15 @@ const nextConfig = withPWA({
         pathname: "/**",
       },
     ],
+    // Next.js 15 image optimization
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 60,
   },
   transpilePackages: ["next-image-export-optimizer"],
+  // Next.js 15 performance optimizations
+  compress: true,
+  poweredByHeader: false,
+  generateEtags: false,
   env: {
     nextImageExportOptimizer_imageFolderPath: "public/images",
     nextImageExportOptimizer_exportFolderPath: "out",
@@ -30,11 +52,6 @@ const nextConfig = withPWA({
     nextImageExportOptimizer_generateAndUseBlurImages: "true",
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
   },
-  // experimental:{
-  //   images:{
-  //     layoutRaw: true,
-  //   }
-  // }
 });
 
 module.exports = nextConfig;

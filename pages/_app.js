@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import dynamic from "next/dynamic";
 import "tailwindcss/tailwind.css";
 import Layout from "../components/Layout";
@@ -30,6 +30,46 @@ function MyApp({ Component, pageProps }) {
       router.events.off("routeChangeComplete", handleRouteChangeComplete);
     };
   }, [router]);
+
+  // Structured data for the main website
+  const websiteStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vivek K J",
+    "url": "https://vivekkj.in",
+    "image": "https://vivekkj.in/images/avatar.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/iamvivekkj",
+      "https://www.github.com/vivekkj123",
+      "https://www.gitlab.com/vivekkj",
+      "https://www.x.com/iamvivekkj",
+      "https://www.instagram.com/iamvivekkj",
+      "https://www.facebook.com/iamvivekkj",
+      "https://www.t.me/iamvivekkj",
+      "https://fosstodon.org/@vivekkj"
+    ],
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "IBM India Software Labs"
+    },
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Sahrdaya College of Engineering and Technology"
+    },
+    "knowsAbout": [
+      "ReactJS",
+      "NextJS", 
+      "Node.js",
+      "React Native",
+      "Flutter",
+      "Java",
+      "Python",
+      "GNU/Linux",
+      "Open Source Software"
+    ]
+  };
+
   return (
     <React.Fragment>
       <Head>
@@ -73,6 +113,14 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#fef303" />
         <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onLoad="this.onload=null;this.rel='stylesheet'" />
         <noscript><link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" /></noscript>
+        
+        {/* Structured Data for main website */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteStructuredData),
+          }}
+        />
       </Head>
 
       {Loading ? (
@@ -80,9 +128,11 @@ function MyApp({ Component, pageProps }) {
           <PacmanLoader loading={Loading} color="#fef303" />
         </LoadingLayout>
       ) : (
+        <Suspense fallback={<LoadingLayout><PacmanLoader loading={true} color="#fef303" /></LoadingLayout>}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
+        </Suspense>
       )}
     </React.Fragment>
   );
