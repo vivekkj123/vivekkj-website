@@ -19,9 +19,10 @@
     "disqus-react": "^1.1.5",
     "gray-matter": "^4.0.3",
     "marked": "^14.1.4",
-    "next": "^15.4.4",
-    "next-image-export-optimizer": "^1.19.0",
-    "next-seo": "^6.8.0",
+    "next": "^15.1.6",
+    "next-image-export-optimizer": "^1.6.1",
+    "next-seo": "^6.1.0",
+    "@next/font": "^14.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-paginate": "^8.2.0",
@@ -31,11 +32,11 @@
     "swiper": "^11.1.14"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "autoprefixer": "^10.4.21",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.12",
     "eslint": "^9.32.0",
-    "eslint-config-next": "15.4.4",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17"
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
