@@ -111,8 +111,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" href="/icon-512x512.png"></link>
 
         <meta name="theme-color" content="#fef303" />
-        <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onLoad="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" /></noscript>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
         
         {/* Structured Data for main website */}
         <script
