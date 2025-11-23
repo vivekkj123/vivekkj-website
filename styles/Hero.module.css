@@ -4,8 +4,6 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
-  margin: 2rem;
-  padding: 2rem;
   overflow: hidden;
 }
 
@@ -14,18 +12,15 @@
   position: absolute;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, 
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.05) 25%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.05) 25%,
+      transparent 70%);
   border-radius: 50%;
   top: 0;
   left: 0;
-  transform: translate(
-    calc(var(--mouse-x, 0) - 150px),
-    calc(var(--mouse-y, 0) - 150px)
-  );
+  transform: translate(calc(var(--mouse-x, 0) - 150px),
+      calc(var(--mouse-y, 0) - 150px));
   pointer-events: none;
   z-index: 0;
   transition: opacity 0.15s;
@@ -37,7 +32,7 @@
 }
 
 /* Ensure content stays above the effect */
-.hero > * {
+.hero>* {
   position: relative;
   z-index: 1;
 }
@@ -84,8 +79,10 @@
   z-index: 100;
   width: 48px;
   height: 48px;
-  margin-top: -24px; /* Negative half of height. */
-  margin-left: -24px; /* Negative half of width. */
+  margin-top: -24px;
+  /* Negative half of height. */
+  margin-left: -24px;
+  /* Negative half of width. */
   border-radius: 50%;
   display: inline-block;
   border-top: 4px solid #FFF;
@@ -95,7 +92,7 @@
 }
 
 .loader::after {
-  content: '';  
+  content: '';
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -111,12 +108,13 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
-} 
+}
 
-.spinner{
+.spinner {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -126,7 +124,7 @@
   transition: opacity 0.7s visibility 0.75s;
 }
 
-.post > * > a {
+.post>*>a {
   text-decoration: underline;
   color: #165bdc;
 }
