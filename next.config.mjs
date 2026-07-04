@@ -14,15 +14,7 @@ const nextConfig = {
     // Enable new image optimization features
     optimizePackageImports: ['@fortawesome/fontawesome-svg-core', '@fortawesome/free-brands-svg-icons', '@fortawesome/free-solid-svg-icons'],
   },
-  // Next.js 15 Turbopack configuration
-  turbopack: {
-    rules: {
-      '*.svg': {
-        loaders: ['@svgr/webpack'],
-        as: '*.js',
-      },
-    },
-  },
+
   images: {
     loader: "custom",
     loaderFile: "./utils/imageLoader.js",
