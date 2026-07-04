@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import LoadingLayout from "../components/LoadingLayout";
 import "../styles/globals.css";
 import "boxicons/css/boxicons.min.css";
+import "@fontsource/cal-sans";
 import { Geist } from "next/font/google";
 
 const geistSans = Geist({
