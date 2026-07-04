@@ -1,33 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/cal-sans');
 
-@font-face {
-  font-family: 'Geist Sans';
-  src: url('/fonts/GeistSans-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Geist Sans';
-  src: url('/fonts/GeistSans-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Geist Sans';
-  src: url('/fonts/GeistSans-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Geist Sans';
-  src: url('/fonts/GeistSans-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
   --swiper-theme-color: #165bdc;
@@ -36,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Geist Sans', system-ui, -apple-system, sans-serif;
+  font-family: inherit;
   background: #0A0A0B;
   color: white;
   min-height: 100vh;

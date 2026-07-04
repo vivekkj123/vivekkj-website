@@ -6,6 +6,11 @@ import "tailwindcss/tailwind.css";
 import Layout from "../components/Layout";
 import LoadingLayout from "../components/LoadingLayout";
 import "../styles/globals.css";
+import { Geist } from "next/font/google";
+
+const geistSans = Geist({
+  subsets: ["latin"],
+});
 
 const PacmanLoader = dynamic(() => import("react-spinners/PacmanLoader"), { ssr: false });
 
@@ -71,7 +76,7 @@ function MyApp({ Component, pageProps }) {
   };
 
   return (
-    <React.Fragment>
+    <main className={geistSans.className}>
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -132,7 +137,7 @@ function MyApp({ Component, pageProps }) {
         </Layout>
         </Suspense>
       )}
-    </React.Fragment>
+    </main>
   );
 }
 

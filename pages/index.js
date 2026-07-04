@@ -1,13 +1,18 @@
 import dynamic from "next/dynamic";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import ContactMe from "../components/ContactMe";
 import Hero from "../components/Hero";
-import Projects from "../components/Projects";
 import ScrollToTop from "../components/ScrollToTop";
 import Skills from "../components/Skills";
 import WhoAmI from "../components/WhoAmI";
 import LatestPosts from "../components/LatestPosts";
+
+const Projects = dynamic(() => import("../components/Projects"), {
+  ssr: false,
+});
+const ContactMe = dynamic(() => import("../components/ContactMe"), {
+  ssr: false,
+});
 import { getAllPosts } from '../lib/posts';
 
 export async function getStaticProps() {
