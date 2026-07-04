@@ -4,11 +4,9 @@ import {
   faCode,
   faCodeCompare,
   faCodePullRequest,
-  faGraduationCap,
   faHeart,
   faLanguage,
   faLaptopCode,
-  faMobileScreen
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -69,7 +67,7 @@ const WhoAmI = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <FontAwesomeIcon icon={faDebian} className="text-primary-fg" />
-                <span>Debian Maintainer</span>
+                <span>Debian Developer</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <FontAwesomeIcon icon={faCodeCompare} className="text-primary-fg" />

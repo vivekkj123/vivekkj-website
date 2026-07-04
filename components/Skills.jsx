@@ -19,22 +19,18 @@ const Skills = () => {
     { icon: faReact, name: "ReactJS", color: "#61DAFB" },
     { icon: "ai-nextjs-fill", name: "NextJS", isCustomIcon: true, color: "#FFFFFF" },
     { icon: faJava, name: "Java", color: "#007396" },
-    { icon: "bx bxl-spring-boot", name: "Spring Boot", isCustomIcon: true, color: "#6DB33F" },
+    { icon: "bx bxl-spring-boot", name: "Spring / Spring Boot", isCustomIcon: true, color: "#6DB33F" },
     { icon: "bx bxl-kubernetes", name: "Kubernetes", isCustomIcon: true, color: "#326CE5" },
     { icon: "bx bxl-docker", name: "Docker", isCustomIcon: true, color: "#2496ED" },
     { icon: faNodeJs, name: "Node.JS", color: "#339933" },
     { icon: faReact, name: "React Native", color: "#61DAFB" },
-    { icon: faVuejs, name: "VueJS", color: "#4FC08D" },
     { icon: "bx bxl-tailwind-css", name: "Tailwind CSS", isCustomIcon: true, color: "#06B6D4" },
     { icon: faSass, name: "Sass, Scss", color: "#CC6699" },
     { icon: faFigma, name: "Figma", color: "#F24E1E" },
-    { icon: "bx bxl-flutter", name: "Flutter", isCustomIcon: true, color: "#02569B" },
-    { icon: "bx bxl-c-plus-plus", name: "C/C++", isCustomIcon: true, color: "#00599C" },
     { icon: faPython, name: "Python", color: "#3776AB" },
     { icon: faGitAlt, name: "Git", color: "#F05032" },
     { icon: faLinux, name: "GNU/Linux", color: "#FCC624" },
     { icon: faDatabase, name: "Databases", color: "#4479A1" },
-    { icon: "bx bxl-firebase", name: "Firebase", isCustomIcon: true, color: "#FFCA28" }
   ];
 
   const container = {
