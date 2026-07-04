@@ -1,9 +1,13 @@
 ---
-title: "Creating my first chrome extension"
-date: "2023-06-18"
-description: "How I developed a extension for simplifying linways end semester survey"
-coverImage: "https://github.com/vivekkj123/linways-auto-feedback/raw/main/src/assets/logo.png"
-tags: ["chrome", "extension", "linways"]
+title: Creating my first chrome extension
+date: 2023-06-18
+coverImage: >-
+  https://github.com/vivekkj123/linways-auto-feedback/raw/main/src/assets/logo.png
+description: How I developed a extension for simplifying linways end semester survey
+tags:
+  - chrome
+  - extension
+  - linways
 ---
 ## Long story in short
 
@@ -19,15 +23,15 @@ The next step was to find a boilerplate that would simplify the development proc
 
 I kept the popup UI design as simple as possible, but the main focus of a Chrome extension is on the logic and functionality. For a simple Chrome extension, there are mainly three parts:
 
-- Content.js/ts: A file that runs in the context of pages.
-- Background.js/ts: A script that connects the Chrome extension to the browser. It listens for various events happening in the browser.
-- Popup.jsx/html: The popup window that appears when you click the extension icon on the extension bar.
-- Manifest.json: Metadata about the extension.
+* Content.js/ts: A file that runs in the context of pages.
+* Background.js/ts: A script that connects the Chrome extension to the browser. It listens for various events happening in the browser.
+* Popup.jsx/html: The popup window that appears when you click the extension icon on the extension bar.
+* Manifest.json: Metadata about the extension.
 
 ## Logic/Brain behind the extension
 
 The feedback page will look like this:
-![](/images/Posts/creating-my-first-chrome-extension/feedback-page.jpg)
+!\[]\(/images/Posts/creating-my-first-chrome-extension/feedback-page.jpg)
 
 Now, the radio buttons in a single question will have names like right23, right30, right32, etc. (some random numbers suffixed after the word 'right'). The name will be common for all the radio buttons inside a question. So, to select all the possible options, we can select all elements by targeting the name of that question.
 
@@ -48,7 +52,6 @@ buttons[2].checked = true;
 
 ## How to use/install
 
-Please refer to the [readme](https://github.com/vivekkj123/linways-auto-feedback/tree/main#linways-auto-feedback) for instructions on how to use/install the extension.
-
-
- **Thank you for reading <3**
+Please refer to the [readme](https://github.com/vivekkj123/linways-auto-feedback/tree/main#linways-auto-feedback) for instructions on how to use/install the extension.\
+\
+**Thank you for reading \<3**

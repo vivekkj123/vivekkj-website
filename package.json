@@ -14,6 +14,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^3.3.1",
+    "@keystatic/core": "^0.5.50",
+    "@keystatic/next": "^5.0.4",
     "@serwist/next": "^9.5.11",
     "aos": "^2.3.4",
     "boxicons": "^2.1.4",

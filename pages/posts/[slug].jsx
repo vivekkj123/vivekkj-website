@@ -318,6 +318,13 @@ export async function getStaticProps({ params: { slug } }) {
     "utf-8"
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
+  
+  if (frontmatter.date instanceof Date) {
+    frontmatter.date = frontmatter.date.toISOString().split('T')[0];
+  } else if (frontmatter.date) {
+    frontmatter.date = String(frontmatter.date);
+  }
+  
   let ReadTime = readingTime(content);
   return {
     props: {

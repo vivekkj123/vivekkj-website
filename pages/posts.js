@@ -152,6 +152,12 @@ export async function getStaticProps() {
     );
     const { data: frontmatter } = matter(markdownWithMeta);
     
+    if (frontmatter.date instanceof Date) {
+      frontmatter.date = frontmatter.date.toISOString().split('T')[0];
+    } else if (frontmatter.date) {
+      frontmatter.date = String(frontmatter.date);
+    }
+    
     return {
       frontmatter,
       slug: filename.replace('.md', '')
