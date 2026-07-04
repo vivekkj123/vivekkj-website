@@ -1,9 +1,14 @@
 import { config, fields, collection } from '@keystatic/core';
 
 export default config({
-  storage: {
-    kind: 'local',
-  },
+  storage: process.env.NODE_ENV === 'production' && process.env.KEYSTATIC_GITHUB_CLIENT_ID
+    ? {
+        kind: 'github',
+        repo: 'vivekkj123/vivekkj-website',
+      }
+    : {
+        kind: 'local',
+      },
   collections: {
     posts: collection({
       label: 'Posts',
