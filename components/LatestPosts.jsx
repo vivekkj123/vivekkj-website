@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import { useMemo } from "react";
 
 const LatestPosts = ({ posts }) => {
@@ -33,9 +33,10 @@ const LatestPosts = ({ posts }) => {
             >
               {post.frontmatter.coverImage && (
                 <div className="relative h-48 w-full">
-                  <ExportedImage
+                  <Image
                     src={post.frontmatter.coverImage}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     style={{ objectFit: "cover" }}
                     alt={post.frontmatter.title}
                     loading="lazy"

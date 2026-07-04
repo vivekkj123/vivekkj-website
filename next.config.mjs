@@ -25,6 +25,7 @@ const nextConfig = {
   },
   images: {
     loader: "custom",
+    loaderFile: "./utils/imageLoader.js",
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     remotePatterns: [
@@ -39,20 +40,10 @@ const nextConfig = {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
   },
-  transpilePackages: ["next-image-export-optimizer"],
   // Next.js 15 performance optimizations
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
-  env: {
-    nextImageExportOptimizer_imageFolderPath: "public/images",
-    nextImageExportOptimizer_exportFolderPath: "out",
-    nextImageExportOptimizer_quality: "75",
-    nextImageExportOptimizer_storePicturesInWEBP: "true",
-    nextImageExportOptimizer_exportFolderName: "nextImageExportOptimizer",
-    nextImageExportOptimizer_generateAndUseBlurImages: "true",
-    nextImageExportOptimizer_remoteImageCacheTTL: "0",
-  },
 };
 
 export default withSerwist(nextConfig);

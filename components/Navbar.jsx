@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import styles from "../styles/Navbar.module.css";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -52,7 +52,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="relative z-50 hover:scale-105 transition-transform">
-          <ExportedImage src="/icon-512x512.png" alt="Logo" width={35} height={35} />
+          <Image src="/icon-512x512.png" alt="Logo" width={35} height={35} />
         </Link>
 
         <button 

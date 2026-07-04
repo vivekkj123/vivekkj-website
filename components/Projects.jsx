@@ -1,4 +1,4 @@
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useMemo } from "react";
 import styles from "../styles/Projects.module.css";
@@ -46,9 +46,10 @@ const Projects = () => {
                 <div className="relative h-[200px] w-full overflow-hidden bg-[#0A0A0B]">
                   {project.images.length === 1 ? (
                     <div className="relative h-full w-full group-hover:scale-105 transition-transform duration-500">
-                      <ExportedImage
+                      <Image
                         src={project.images[0]}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         style={{ objectFit: "contain" }}
                         alt={project.title}
                         loading="lazy"
@@ -65,9 +66,10 @@ const Projects = () => {
                     >
                       {project.images.map((img) => (
                         <SwiperSlide key={img}>
-                          <ExportedImage
+                          <Image
                             src={img}
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             style={{ objectFit: "contain" }}
                             alt={project.title}
                             loading="lazy"

@@ -1,5 +1,5 @@
 import matter from "gray-matter";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import path from "path";
@@ -52,9 +52,10 @@ const Posts = ({ posts = [] }) => {
             >
               {post.frontmatter.coverImage && (
                 <div className="relative h-64 w-full">
-                  <ExportedImage
+                  <Image
                     src={post.frontmatter.coverImage}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     style={{ objectFit: "cover" }}
                     alt={post.frontmatter.title}
                     loading="lazy"

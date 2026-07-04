@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/Footer.module.css";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Brand */}
           <div className="flex flex-col gap-8">
-            <ExportedImage
+            <Image
               src="/icon-512x512.png"
               alt="Logo"
               width={100}

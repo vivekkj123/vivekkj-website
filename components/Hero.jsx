@@ -15,7 +15,7 @@ import {
   faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import { useEffect } from "react";
 import styles from "../styles/Hero.module.css";
 import Typewriter from 'typewriter-effect';
@@ -181,7 +181,7 @@ const Hero = () => {
                 rel="noreferrer"
                 className="transition-transform hover:scale-105"
               >
-                <ExportedImage
+                <Image
                   src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
                   alt="Buy Me A Coffee"
                   width={140}
@@ -204,10 +204,11 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full blur-2xl opacity-30 animate-pulse" />
               <div className="absolute inset-4 bg-[#0A0A0B] rounded-full z-10 flex items-center justify-center border border-white/10">
                 <div className="w-[95%] h-[95%] rounded-full overflow-hidden relative">
-                  <ExportedImage
+                  <Image
                     src="/images/avatar.jpg"
                     alt="Vivek K J"
                     fill
+                    sizes="(max-width: 768px) 256px, 320px"
                     className="object-cover"
                     priority
                   />
