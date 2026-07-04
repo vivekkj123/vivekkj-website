@@ -1,12 +1,13 @@
-/** @type {import('next').NextConfig} */
-const withPWA = require("@ducanh2912/next-pwa").default({
-  dest: "public",
+import withSerwistInit from "@serwist/next";
+
+const withSerwist = withSerwistInit({
+  swSrc: "sw.js",
+  swDest: "public/sw.js",
   register: true,
-  skipWaiting: true,
   disable: process.env.NODE_ENV === "development",
 });
 
-const nextConfig = withPWA({
+const nextConfig = {
   reactStrictMode: true,
   // Next.js 15 features
   experimental: {
@@ -52,6 +53,6 @@ const nextConfig = withPWA({
     nextImageExportOptimizer_generateAndUseBlurImages: "true",
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
   },
-});
+};
 
-module.exports = nextConfig;
+export default withSerwist(nextConfig);
