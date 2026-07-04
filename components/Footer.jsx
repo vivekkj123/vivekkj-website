@@ -71,7 +71,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold">Connect</h4>
+            <h4 className="font-semibold text-white">Connect</h4>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="https://www.linkedin.com/in/iamvivekkj"
@@ -149,6 +149,16 @@ const Footer = () => {
               >
                 <FontAwesomeIcon icon={faKey} size="lg" />
               </Link>
+            </div>
+            <div className="pt-2">
+              <a
+                href="https://www.buymeacoffee.com/vivekkj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-white/[0.03] hover:bg-white/[0.08] text-gray-300 hover:text-white rounded-xl border border-white/[0.05] transition-all duration-300 text-xs font-semibold"
+              >
+                <span>☕ Buy me a coffee</span>
+              </a>
             </div>
           </div>
         </div>

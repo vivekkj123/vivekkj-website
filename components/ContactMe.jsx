@@ -7,7 +7,7 @@ const ContactMe = () => {
       data-aos="zoom-in-down" 
       className="max-w-4xl mx-auto my-20 px-4"
     >
-      <div className="backdrop-blur-xl bg-white/5 rounded-3xl border border-white/10 p-8 md:p-12">
+      <div className="backdrop-blur-xl bg-white/[0.02] rounded-3xl border border-white/[0.05] p-8 md:p-12">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent mb-12 text-center">
           Let&apos;s Connect
         </h2>
@@ -21,16 +21,16 @@ const ContactMe = () => {
             <input
               name="Name"
               type="text"
-              className="w-full px-6 py-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 
-                focus:border-primary-fg outline-none transition duration-300 placeholder:text-gray-500"
+              className="w-full px-6 py-4 bg-white/[0.02] backdrop-blur-md rounded-2xl border border-white/[0.05] 
+                focus:border-primary-fg focus:ring-2 focus:ring-primary-fg/20 outline-none transition duration-300 placeholder:text-gray-550"
               placeholder="Your Name"
               required
             />
             <input
               name="Email"
               type="email"
-              className="w-full px-6 py-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 
-                focus:border-primary-fg outline-none transition duration-300 placeholder:text-gray-500"
+              className="w-full px-6 py-4 bg-white/[0.02] backdrop-blur-md rounded-2xl border border-white/[0.05] 
+                focus:border-primary-fg focus:ring-2 focus:ring-primary-fg/20 outline-none transition duration-300 placeholder:text-gray-550"
               placeholder="Your Email"
               required
             />
@@ -39,8 +39,8 @@ const ContactMe = () => {
           <textarea
             name="Message"
             rows="6"
-            className="w-full px-6 py-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 
-              focus:border-primary-fg outline-none transition duration-300 placeholder:text-gray-500"
+            className="w-full px-6 py-4 bg-white/[0.02] backdrop-blur-md rounded-2xl border border-white/[0.05] 
+              focus:border-primary-fg focus:ring-2 focus:ring-primary-fg/20 outline-none transition duration-300 placeholder:text-gray-550"
             placeholder="Your Message"
             required
           ></textarea>
@@ -48,9 +48,8 @@ const ContactMe = () => {
           <div className="text-right">
             <button
               type="submit"
-              className="px-8 py-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 
-                hover:bg-primary-fg hover:text-primary-bg font-medium transition duration-300
-                inline-flex items-center gap-2"
+              className="px-8 py-4 bg-primary-fg hover:bg-indigo-600 rounded-2xl text-white font-medium transition duration-300
+                inline-flex items-center gap-2 shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/30"
             >
               Send Message
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

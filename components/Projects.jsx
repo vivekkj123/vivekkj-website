@@ -9,6 +9,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { motion, AnimatePresence } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe, faDownload, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
   const [ShowMore, setShowMore] = useState(false);
@@ -16,6 +19,20 @@ const Projects = () => {
   const displayedProjects = useMemo(() => {
     return ShowMore ? projects : projects.slice(0, 6);
   }, [ShowMore]);
+
+  const getButtonIcon = (name) => {
+    const lowercaseName = name.toLowerCase();
+    if (lowercaseName.includes("github") || lowercaseName.includes("source")) {
+      return faGithub;
+    }
+    if (lowercaseName.includes("download") || lowercaseName.includes("release")) {
+      return faDownload;
+    }
+    if (lowercaseName.includes("live") || lowercaseName.includes("demo") || lowercaseName.includes("website")) {
+      return faGlobe;
+    }
+    return faCode;
+  };
 
   return (
     <section id="projects" className="py-20 px-4 relative">
@@ -41,7 +58,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-primary-fg/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-fg/10"
+                className="group relative bg-white/[0.02] rounded-2xl overflow-hidden border border-white/[0.05] hover:border-primary-fg/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-fg/10"
               >
                 <div className="relative h-[200px] w-full overflow-hidden bg-[#0A0A0B]">
                   {project.images.length === 1 ? (
@@ -111,15 +128,16 @@ const Projects = () => {
                     )}
                   </div>
 
-                  <div className="pt-4 flex gap-3">
+                  <div className="pt-4 flex flex-wrap gap-3">
                     {project.buttons.map((btn) => (
                       <Link
                         key={btn.link}
                         href={btn.link}
                         target="_blank"
-                        className="flex-1 text-center px-4 py-2 rounded-lg bg-white/5 hover:bg-primary-fg text-sm font-medium transition-all duration-300 border border-white/10 hover:border-primary-fg"
+                        className="flex-grow flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.03] hover:bg-primary-fg hover:text-white text-sm font-medium transition-all duration-300 border border-white/[0.05] hover:border-primary-fg"
                       >
-                        {btn.name}
+                        <FontAwesomeIcon icon={getButtonIcon(btn.name)} className="text-xs" />
+                        <span>{btn.name}</span>
                       </Link>
                     ))}
                   </div>

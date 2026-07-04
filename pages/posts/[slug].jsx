@@ -102,7 +102,7 @@ const Post = ({
   const ogImage = `https://og-image-generator-blog.vercel.app/api/og?title=${encodeURIComponent(title)}`;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0A0A0B] to-[#1A1A1A] text-white">
+    <div className="min-h-screen bg-gradient-to-br from-[#030712] to-[#0b0f19] text-white">
       <Head>
         <title>{`${title} | Vivek K J`}</title>
         <meta name="description" content={description} />
@@ -141,7 +141,7 @@ const Post = ({
         
         {/* Additional SEO */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#fef303" />
+        <meta name="theme-color" content="#6366f1" />
         
         {/* Structured Data */}
         <script
@@ -199,10 +199,10 @@ const Post = ({
       <div className="max-w-7xl mx-auto px-4 py-20">
         <Link
           href="/posts"
-          className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-12 transition-colors"
+          className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-12 transition-colors group"
         >
           <svg
-            className="w-5 h-5"
+            className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -238,7 +238,7 @@ const Post = ({
                     {tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 text-sm bg-white/5 backdrop-blur-xl rounded-full"
+                        className="px-2.5 py-0.5 text-xs bg-primary-fg/10 text-primary-fg rounded-full border border-primary-fg/20 font-medium"
                       >
                         {tag}
                       </span>
@@ -257,7 +257,7 @@ const Post = ({
           {/* Table of Contents */}
           {headings.length > 0 && (
             <aside className="hidden lg:block">
-              <div className="sticky top-8 backdrop-blur-xl bg-white/5 rounded-3xl border border-white/10 p-6">
+              <div className="sticky top-8 backdrop-blur-xl bg-white/[0.02] rounded-3xl border border-white/[0.05] p-6">
                 <h3 className="text-lg font-semibold mb-4">
                   Table of Contents
                 </h3>

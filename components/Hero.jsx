@@ -70,23 +70,11 @@ const Hero = () => {
             <div className="space-y-4">
               <h2 className="text-lg md:text-xl text-primary-fg font-medium tracking-wide">HELLO THERE!</h2>
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
-                I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Vivek K J</span>
+                I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">Vivek K J</span>
               </h1>
-              <div className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-light min-h-[60px] md:min-h-[40px]">
-                <Typewriter
-                  options={{
-                    strings: [
-                      'Software Engineer',
-                      'Free Software Enthusiast',
-                      'Full Stack Developer',
-                      'Open Source Contributor'
-                    ],
-                    autoStart: true,
-                    loop: true,
-                    deleteSpeed: 50,
-                  }}
-                />
-              </div>
+              <p className="text-xl sm:text-2xl text-gray-300 font-light max-w-xl">
+                Building resilient softwares and contributing to the open-source ecosystem.
+              </p>
             </div>
             
             <div className="flex flex-col gap-3 text-gray-400 text-sm md:text-base">
@@ -164,7 +152,7 @@ const Hero = () => {
             >
               <a 
                 href="/resume.pdf" 
-                className="group relative px-6 py-2 md:px-8 md:py-3 bg-primary-fg rounded-full text-white font-bold overflow-hidden transition-all hover:shadow-[0_0_20px_rgba(22,91,220,0.5)] text-sm md:text-base w-full sm:w-auto text-center"
+                className="group relative px-6 py-2.5 md:px-8 md:py-3.5 bg-primary-fg rounded-full text-white font-bold overflow-hidden transition-all hover:shadow-[0_0_20px_rgba(99,102,241,0.5)] text-sm md:text-base w-full sm:w-auto text-center"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Download Resume
@@ -176,19 +164,10 @@ const Hero = () => {
               </a>
               
               <a
-                href="https://www.buymeacoffee.com/vivekkj"
-                target="_blank"
-                rel="noreferrer"
-                className="transition-transform hover:scale-105"
+                href="#contact"
+                className="px-6 py-2.5 md:px-8 md:py-3.5 bg-white/5 hover:bg-white/10 rounded-full text-white font-medium border border-white/10 hover:border-white/20 transition-all text-sm md:text-base w-full sm:w-auto text-center"
               >
-                <Image
-                  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                  alt="Buy Me A Coffee"
-                  width={140}
-                  height={40}
-                  className="w-[140px] h-[40px] md:w-[150px] md:h-[45px]"
-                  loading="lazy"
-                />
+                Let&apos;s Connect
               </a>
             </motion.div>
           </motion.div>
@@ -201,8 +180,19 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80">
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full blur-2xl opacity-30 animate-pulse" />
-              <div className="absolute inset-4 bg-[#0A0A0B] rounded-full z-10 flex items-center justify-center border border-white/10">
+              <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-full blur-2xl opacity-20 animate-pulse" />
+              
+              {/* Tech Rings */}
+              <div className="absolute -inset-4 border border-dashed border-primary-fg/20 rounded-full animate-[spin_60s_linear_infinite] pointer-events-none" />
+              <div className="absolute -inset-8 border border-white/5 rounded-full animate-[spin_120s_linear_infinite] pointer-events-none" />
+              
+              {/* Corner crosshair accents */}
+              <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-primary-fg/40 pointer-events-none" />
+              <div className="absolute -top-2 -right-2 w-4 h-4 border-t-2 border-r-2 border-primary-fg/40 pointer-events-none" />
+              <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b-2 border-l-2 border-primary-fg/40 pointer-events-none" />
+              <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-primary-fg/40 pointer-events-none" />
+
+              <div className="absolute inset-4 bg-[#030712] rounded-full z-10 flex items-center justify-center border border-white/10">
                 <div className="w-[95%] h-[95%] rounded-full overflow-hidden relative">
                   <Image
                     src="/images/avatar.jpg"
@@ -214,42 +204,6 @@ const Hero = () => {
                   />
                 </div>
               </div>
-              
-              {/* Orbiting Elements */}
-              <motion.div 
-                className="absolute inset-0 z-20"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              >
-                <motion.div 
-                  className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 md:w-8 md:h-8 bg-[#0A0A0B] rounded-full border border-white/10 flex items-center justify-center shadow-lg"
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                >
-                  <span className="text-[10px] md:text-xs">⚛️</span>
-                </motion.div>
-                <motion.div 
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-6 h-6 md:w-8 md:h-8 bg-[#0A0A0B] rounded-full border border-white/10 flex items-center justify-center shadow-lg"
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                >
-                  <span className="text-[10px] md:text-xs">🍥</span>
-                </motion.div>
-                <motion.div 
-                  className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-6 h-6 md:w-8 md:h-8 bg-[#0A0A0B] rounded-full border border-white/10 flex items-center justify-center shadow-lg"
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                >
-                  <span className="text-[10px] md:text-xs">📱</span>
-                </motion.div>
-                <motion.div 
-                  className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 w-6 h-6 md:w-8 md:h-8 bg-[#0A0A0B] rounded-full border border-white/10 flex items-center justify-center shadow-lg"
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                >
-                  <span className="text-[10px] md:text-xs">🔥</span>
-                </motion.div>
-              </motion.div>
             </div>
           </motion.div>
         </div>

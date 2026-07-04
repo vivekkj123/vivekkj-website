@@ -117,7 +117,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon-512x512.png"></link>
 
-        <meta name="theme-color" content="#fef303" />
+        <meta name="theme-color" content="#6366f1" />
         
         {/* Structured Data for main website */}
         <script
@@ -133,7 +133,7 @@ function MyApp({ Component, pageProps }) {
           <PacmanLoader loading={Loading} color="#fef303" />
         </LoadingLayout>
       ) : (
-        <Suspense fallback={<LoadingLayout><PacmanLoader loading={true} color="#fef303" /></LoadingLayout>}>
+        <Suspense fallback={<LoadingLayout><PacmanLoader loading={true} color="#6366f1" /></LoadingLayout>}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
