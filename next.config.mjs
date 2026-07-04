@@ -14,7 +14,7 @@ const nextConfig = {
     // Enable new image optimization features
     optimizePackageImports: ['@fortawesome/fontawesome-svg-core', '@fortawesome/free-brands-svg-icons', '@fortawesome/free-solid-svg-icons'],
   },
-
+allowedDevOrigins: ['127.0.0.1'],
   images: {
     loader: "custom",
     loaderFile: "./utils/imageLoader.js",
